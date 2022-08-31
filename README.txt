@@ -76,9 +76,11 @@ modifying these folders' contents.
     not have lower-resolution counterparts, since the images for them are handled by the pipe and
     not the scene layers. As such, their sprites are twice the size of those in versions 1.3 and
     below and are not scaled accordingly. This has no effect on gameplay, but will cause these pipes
-    to be twice the size, sometimes interfering with the visuals. It is not currently known if this
-    applies to other sprites; if one is found, please send a bug report so we can list it here.
-    For now, Globin does not fix this issue. It is unknown if it will eventually do so.
+    to be twice the size, sometimes interfering with the visuals. For the same reason, level arrows
+    that appear above incomplete levels will be half the size if overridden by a mod such as Lost
+    in Paradise. It is not currently known if this applies to other sprites; if one is found, please
+    send a bug report so we can list it here. For now, Globin does not fix this issue. It is unknown
+    if it will eventually do so.
 
     On certain platorms, lxml is unable to parse certain characters. If you encounter this problem
     while Globin is parsing "text.xml," there is a version of this file with all foreign languages
@@ -88,6 +90,11 @@ modifying these folders' contents.
     Addins that override images will usually not show overridden images if 2x resolution is enabled.
     As such, Globin disables 2x graphics by default. It can be re-enabled by modifying
     "properties/config.template.ini" in the "addin_rsc" folder.
+    
+    The cutscenes in the latest version of World of Goo use a different type of binary. This means
+    that custom cutscenes will be skipped, and overriden cutscenes will crash the game. This is
+    prevented by preserving the resources file of each vanilla cutscene. These cutscenes can still
+    be modified by directly modifying the resources directly, however.
 
 ~~~
 
@@ -235,5 +242,5 @@ another user of Globin. It can be accessed here:
     updated frequently on GitHub to reflect issues that have arisen or have been fixed.
 
     - Currently, the Experimental Level Project does not work with Globin. The first level crashes
-    when being opened. It is not yet known why this is. If you think you might know the problem,
-    please open a topic on the GooFans discord or raise an issue on GitHub.
+      when being opened. It is not yet known why this is. If you think you might know the problem,
+      please open a topic on the GooFans discord or raise an issue on GitHub.
