@@ -1,0 +1,1416 @@
+<?xml version="1.0"?>
+
+<strings>
+
+    <!-- This watermark should be an EMPTY STRING -->
+    <string id="LABEL_LABEL"
+        text=""
+            />
+
+    <!-- Chapter names and descriptions -->
+    <string id="CHAPTER1_NAME"
+        text="Chapter 1"
+            />
+    <string id="CHAPTER1_DESCRIPTION"
+        text="&quot;The Goo Filled Hills&quot;"
+            />
+    <string id="CHAPTER2_NAME"
+        text="Chapter 2"
+                                    />
+    <string id="CHAPTER2_DESCRIPTION"
+        text="&quot;Little Miss World of Goo&quot;"
+                                    />
+    <string id="CHAPTER3_NAME"
+        text="Chapter 3"
+                                    />
+    <string id="CHAPTER3_DESCRIPTION"
+        text="&quot;Cog in the Machine&quot;"
+                                    />
+    <string id="CHAPTER4_NAME"
+        text="Chapter 4"
+                                    />
+    <string id="CHAPTER4_DESCRIPTION"
+        text="&quot;Information Superhighway&quot;"
+                                    />
+    <string id="CHAPTER5_NAME"
+        text="Epilogue"
+                                    />
+    <string id="CHAPTER5_DESCRIPTION"
+        text="&quot;End of the World&quot;"
+                                    />
+
+    <!-- main menu display -->
+    <string id="WOG_CORP_NAME"
+        text="World of Goo|Corporation"
+                                    />
+    <string id="WOG_CORP_DESCRIPTION"
+        text="Goo Balls you collect in each level|get sent here.  If you play with them|frequently, something good might happen"
+                                    />
+    <string id="WOG_CORP_3D_NAME"
+        text="My Virtual|World of Goo|Corporation"
+                                    />
+    <string id="WOG_CORP_3D_DESCRIPTION"
+        text=""
+    />
+    <string id="WOG_CORP_D_NAME"
+        text="Tower of Goo|Memorial Park|and Recreation|Center"
+                                    />
+    <string id="WOG_CORP_D_DESCRIPTION"
+        text=""
+            />
+
+    <!-- loading screen display -->
+    <string id="WORLD_OF_GOO_CORPORATION_NAME"
+        text="World of Goo|Corporation"
+                                    />
+    <string id="WORLD_OF_GOO_CORPORATION_TEXT"
+        text="exciting innovation in Goo Product"
+                                    />
+    <string id="WORLD_OF_GOO_CORPORATION_3D_NAME"
+        text="My Virtual|World of Goo Corporation"
+                                    />
+    <string id="WORLD_OF_GOO_CORPORATION_3D_TEXT"
+        text="beta!"
+                                    />
+    <string id="WORLD_OF_GOO_CORPORATION_D_NAME"
+        text="Tower of Goo Memorial Park|and Recreation Center"
+                                    />
+    <string id="WORLD_OF_GOO_CORPORATION_D_TEXT"
+        text="now 20% more infinite in all directions"
+                                    />
+    <string id="ROUTE99_NAME"
+        text="Route 99"
+                    />
+    <string id="ROUTE99_TEXT"
+        text="You know where this road ends"
+                    />
+
+    <!-- Chapter 1 Signposts -->
+    <string id="SIGNPOST_ECONOMICDIVIDE_1"
+        text="From across a small divide, another mysterious pipe appeared up in the sky.|Its opening looked warm and inviting...|The Goo Balls seemed to wonder where it might lead.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_ECONOMICDIVIDE_2"
+        text="How did I get up here?!|-the adventurous Sign Painter"
+                                    />
+    <string id="SIGNPOST_HANGLOW_1"
+        text="This cave looks like it's been undisturbed for thousands of years...|Until now!|When the pipe broke through the ceiling above, the sunlight must have blinded these rare Albino Goo Balls.|They didn't seem to notice when it began to snow.|Maybe they would wake up if they had something to jump onto.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_HANGLOW_2"
+        text="The Goo Balls had hoped their progress would be recorded!|But they knew that because of important World of Goo Corporation regulations...|...there was no SAVE feature in the DEMO version.|And that when the power turns off, everything will be lost.|...|-but the Sign Painter never forgets"
+                                    />
+    <string id="SIGNPOST_IMPALESTICKY_1"
+        text="The Goo Balls were excited to explore the mysterious pipe system...|...even if it meant traversing ridiculously contrived terrain.|One of the goo balls seemed to say he felt like an armadillo. Moo!|-love, the mysterious Sign Painter"
+                                    />
+    <string id="SIGNPOST_TUMBLER_1"
+        text="A new species of GooBall!|I must say, they look quite beautiful...|Maybe they have commitment anxiety, I'm not sure,|but it looks like they can be easily detached from one another|-the helpful Sign Painter"
+                                    />
+    <string id="SIGNPOST_IVYTOWER_1"
+        text="If a Goo Ball falls into a well 10 meters deep...|and climbs up 3 meters each day...|but slides down 2 meters at night...|will he still look fabulous in the morning?|...maybe if he were to brace against the walls as hard as he could...|...he could leave the ground behind.|-your friend, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_IVYTOWER_2"
+        text="Some winners are bigger than other winners!|Look in each area's MENU for more important information.|-with distinction, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_CHAIN_1"
+        text="The Goo Balls on this side didn't seem to like the Goo Balls over there on that side...|I don't know, they look the same to me.|Totally delicious.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_FLYINGMACHINE_1"
+        text="Open the gates and fly, monkeys, fly!|But don't forget about me, ok?|-sincerely, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_FISTYREACHESOUT_1"
+        text="Fisty swore he would never be like those tadpoles that grow up and|shoot colored gems out of their mouths.|But he wondered what it might be like.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_FISTYREACHESOUT_2"
+        text="Pop a TIME BUG to go BACK IN TIME...|...by one move.|-the traveling Sign Painter"
+                            />
+    <string id="SIGNPOST_TOWEROFGOO_1"
+        text="Go as fast as you can! They are stronger than you think...|They will have to work together to climb very high...|...a real Tower of Goo!|Some of them felt they had done something like this a long long time ago...|...but things were more experimental back then.|-the Sign Painter!"
+                                    />
+    <string id="SIGNPOST_ODETOBRIDGEBUILDER_1"
+        text="As the sun set over the last of the hills, one of the Goo Balls seemed to say...|...that life sure seemed like a giant physics simulation!|...but as he fell into the spikey death pit below, he knew it probably didn't matter|-love, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_ODETOBRIDGEBUILDER_2"
+        text="It says...|'Hello, this is MOM.'|'Are you there?'|'Are you coming home?'"
+                                />
+    <string id="SIGNPOST_REGURGITATIONPUMPINGSTATION_1"
+        text="The last of the Goo Balls didn't seem to know that they were extremely delicious|or about the nature of the smelly pit in which they found themselves.|They said something about this being the last level of the first chapter...|...whatever that means.|-the Sign Painter"
+                                />
+    <string id="SIGNPOST_REGURGITATIONPUMPINGSTATION_2"
+        text="You might be on to something...|It will be a tight fit, you might have to leave some behind...|but that's probably ok, we're all in it together|-the signpainter was here too"
+                                    />
+    <string id="SIGNPOST_REGURGITATIONPUMPINGSTATION_3"
+        text="They say this is the highest point on the entire island...|As the sun rises, you can almost see forever...|...but I wonder what you might see if you floated a little higher with some new eyes...|-we'll meet again, the Sign Painter"
+                                    />
+
+    <!-- Chapter 2 Signposts -->
+    <string id="SIGNPOST_DROOL_1"
+        text="I'm back! And just in time...|There's a drop of water dangling from that cliff...||And I think it might be alive.|Yuck. I'm not touching it.|-the long lost Sign Painter"
+                                    />
+    <string id="SIGNPOST_FLYAWAYLITTLEONES_1"
+        text="For miles around, there were reports of a giant spinning wheel in the sky!|Everyone is crazy but me.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_FLYAWAYLITTLEONES_2"
+        text="Somewhere on this Island is a power source.|And it generates electricity for the entire World.|Lately, its output has been less than satisfactory.|...|It looks like it's going to rain tomorrow!|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_BLUSTERYDAY_1"
+        text="The windmills were supposed to be a source of cheap clean energy...|...to power the entire world.|But they weren't enough.|And a different source of energy had to be found.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_IMMIGRATIONNATURALIZATIONUNIT_1"
+        text="It allows only meticulously screened Goo Balls onto the main island.|You can't be too careful these days!|Especially since the power source for the entire world is located somewhere on this Island.|But...|Try not to snap the fragile worker cable, it appears to be made from heavily processed Goo.|-the free Sign Painter"
+                                    />
+    <string id="SIGNPOST_IMMIGRATIONNATURALIZATIONUNIT_2"
+        text="These should be used for legally acceptable fun and recreation.|Not for circumventing security systems.|It's for our own good.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_IMMIGRATIONNATURALIZATIONUNIT_3"
+        text="A secret disposal hole down this way!|It's good for quietly disposing of unwanted visitors...|-the visiting Sign Painter"
+                                    />
+    <string id="SIGNPOST_BEAUTYSCHOOL_1"
+        text="Of all the goo, and of all the balls...|...who's the prettiest of them all?|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_BEAUTYSCHOOL_2"
+        text="A red pipe!|It appears to be very exclusive.|Only certain types of Goo are allowed to enter.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_VOLCANICPERCOLATORDAYSPA_1"
+        text="Everyone is welcome!|...they're legally obligated to say.|But she'll never get down there looking like this.|There's another pipe way up there she might enjoy.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_VOLCANICPERCOLATORDAYSPA_2"
+        text="It's a very pretty flower.|I wonder what happens if you get a little closer...|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_VOLCANICPERCOLATORDAYSPA_3"
+        text="This pipe sure is sucking! It's probably best to stay away.|Don't forget to whistle!|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_LEAPHOLE_1"
+        text="Where did everyone go?|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_WHISTLER_1"
+        text="They seem to follow the sound of the whistle.|TAP and HOLD to make the whistle whistle...|Blowing is not required, but it is encouraged.|-the classically trained Sign Painter"
+                                    />
+    <string id="SIGNPOST_BEAUTYANDTHETENTACLE_1"
+        text="We must be getting close to the power source.|But what is it?|Coal?|Nuclear?|Wind?|...|Goo?|It's probably something more elegant.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_BEAUTYANDTHETENTACLE_2"
+        text="It says...|'Be good.'|'MOM is watching.'"
+                                    />
+    <string id="SIGNPOST_BEAUTYANDTHETENTACLE_3"
+        text="It's so simple.|-the original Sign Painter"
+                                    />
+    <string id="SIGNPOST_REDCARPET_1"
+        text="Smile for the cameras!|Everyone is looking so fabulous tonight!|Does she even know where that pipe goes?|Let's not tell her.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_GENETICSORTINGMACHINE_1"
+        text="The last of the Goo Balls didn't seem to notice|they were in some sort of giant Beauty Pageant Machine.|Pretty ones over there, Ugly ones over here.|Personally, I think everyone is beautiful.|Mostly me.|-the devastating Sign Painter"
+                                    />
+    <string id="SIGNPOST_GENETICSORTINGMACHINE_2"
+        text="There must be some way to cross this pit.|Maybe if you fill it with the shattered pieces of those less fortunate than you.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_GENETICSORTINGMACHINE_3"
+        text="It's almost winter, and there is electricity in the air!|It's unclear whether it's anxiety or...|...because the POWER SOURCE is very near.|-the tingling Sign Painter"
+                                    />
+    <string id="SIGNPOST_GENETICSORTINGMACHINE_4"
+        text="...|She's beautiful.|I mean, I'm glad this isn't Hi Def or anything...|...she looks fantastic for something hundreds of years old.|But who is she?|-see you on the other side, the Sign Painter"
+                                    />
+
+    <!-- Chapter 3 Signposts -->
+    <string id="SIGNPOST_BURNINGMAN_1"
+        text="This whole island is a factory!|It appears they are doing outsource work for World of Goo Corporation.|Probably building some kind of new hi-tech product.|...way over here on the other side of the world!|But where's the pipe?|Looks like that guy's giant head is in the way.|Possibly the result of poor local management.|Out with the old, in with the new. That's what I always say.|-the Sign Painter Management Supervisor"
+                                    />
+    <string id="SIGNPOST_BURNINGMAN_2"
+        text="The fire flickers with possibilities.|I wonder what happens if you get a little closer...|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_SECONDHANDSMOKE_1"
+        text="More mysterious pipes appeared up in the sky!|What are they building in this factory?|There is a rumor...|'Everything changes in Chapter 4'|...whatever that means.|-the intrepid Sign Painter"
+                                    />
+    <string id="SIGNPOST_SUPERFUSECHALLENGETIME_1"
+        text="They can do this the easy way...|...or the hard way.|Either way,|everyone's a winner!*|*according to recent online polls.|But some winners are bigger than other winners.|-the statistically fantastic Sign Painter"
+                                    />
+    <string id="SIGNPOST_SUPERFUSECHALLENGETIME_2"
+        text="I'd get out of here if I were you.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_UPPERSHAFT_1"
+        text="These walls look weak.|But maybe it's because I've been working out.|I'm so firm and well-toned.|35 minutes of cardio|then upper torso|and abs|It's really hot in here.|Especially down that way.|Good thing there aren't any explosives nearby.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_UPPERSHAFT_2"
+        text="What kind of factory designer would put deadly spikes all over the walls?|If only there were something to grab onto...|-the Sign Painter is dangling over the fire like a spider"
+                                    />
+    <string id="SIGNPOST_MISTYSLONGBONYROAD_1"
+        text="On a far away hill, Fisty thought he saw someone!|He waved and hoped one day they could be friends.|Oh look!|A new species of Goo Ball!|It's not immediately clear if they are...|...alive.|...or dead.|Probably polite to pretend we don't notice.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_THIRDWHEEL_1"
+        text="A horrible new species of Goo Ball! It's the most vile of all...|They are extremely rare, and as a result, have become quite lonely.|I think I read online somewhere that when they attach to other Goo Balls,|they sprout dozens of 'love spikes' that can grab onto almost any surface.|And won't let go.|The other Goo Balls try to avoid eye contact.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_THIRDWHEEL_2"
+        text="The prettiest ones are always the deadliest.|Her thorns are filled with poison and contempt.|-the deadly Sign Painter"
+                                    />
+    <string id="SIGNPOST_WATERLOCK_1"
+        text="...glarggf...|...glrgl...|-the Sign Painter is sinking"
+                                    />
+    <string id="SIGNPOST_WATERLOCK_2"
+        text="It says...|'Be careful.'|'Clear your cookies one hour before swimming.'|'MOM knows best.'"
+                                    />
+    <string id="SIGNPOST_YOUHAVETOEXPLODETHEHEAD_1"
+        text="These must be the robots that built this factory.|I thought they had all been torn apart and scrapped for parts years ago.|Oh look!|There's one left.|It's so cute!|But the pipe is right behind his head.|Well...|...you can't stop progress.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_YOUHAVETOEXPLODETHEHEAD_2"
+        text="Shhh...!|Sticky Bombs were supposed to have been outlawed.|They are extremely dangerous.|And stick to any surface.|Good thing it's sleeping.|-the law abiding Sign Painter"
+                                    />
+    <string id="SIGNPOST_INCINERATIONDESTINATION_2"
+        text="These cliffs have become extremely sticky after years of waste residue buildup.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_INCINERATIONDESTINATION_1"
+        text="The smell...|burns...|eyes...|Good thing I'm not here right now.|This garbage dump must be where the whole Island's waste and evidence comes for disposal.|Judging by the buildup, we must be getting close to the launch of the new Product.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_PRODUCTLAUNCHER_1"
+        text="Happy New Year!|The last of the Goo Balls didn't seem to notice...|...they were part of an internationally televised World of Goo Corporation Product Launch Event.|The color pamphlet they were handing out indicates the product will change the world forever.|Shhh...!|They are about to reveal World of Goo Corporation's new 'Product Z'...!|-see you after the show, the Sign Painter"
+                                    />
+
+    <!-- Chapter 4 Signposts -->
+    <string id="SIGNPOST_HELLOWORLD_1"
+        text="Welcome to the Information Superhighway!|A land of beauty!|A land of science!|philosophy!|architecture!|fan fiction!|Everything you see, from the water to the leaves are made from sweet free flowing information.|See if you can catch some information on your tongue!|Of course...|...the whole place was abandoned years ago.|This must be all that's left.|-SignPaintr4evr"
+                                    />
+    <string id="SIGNPOST_BULLETINBOARDSYSTEM_1"
+        text="This place is falling apart...|But the Information Superhighway isn't all green, you know.|It used to be beautiful.|The video drivers must need upgrading.|I bet we'll be able to tighten up the graphics around level three.|-the Virtual Sign Painter"
+                                    />
+    <string id="SIGNPOST_GRAPEVINEVIRUS_1"
+        text="It says...|'This area is infected. Keep out.'"
+                                    />
+    <string id="SIGNPOST_GRAPHICPROCESSINGUNIT_1"
+        text="That must be the thing that renders all the graphics.|The creative heart of the Information Superhighway.|Once it's upgraded, the manual says it will offer 256 stunning colors!|But my favorite color will always be green.|-the Virtual Sign Painter"
+                                    />
+    <string id="SIGNPOST_ROADBLOCKS_1"
+        text="Everything is filled with stereo sound and hundreds of colors!|The simulated water splashes over the shattered pieces of the Information Superhighway.|-the traveling Virtual Sign Painter"
+                                    />
+    <string id="SIGNPOST_GRACEFULFAILURE_1"
+        text="It looks like this socket is BLOCKED!|LOL|ROTFLMFAF|Did you know?|Users used to wander the Information Superhighway sniffing for ports just like this|to see if they could gain unauthorized access.|But sometimes it was a trap.|...|Brute force might work.|But sometimes it requires billions of years of computation!|Maybe if you strategically slide the variables around...|...the data will fall right into place!|-the totally 1337 Sign Painter"
+                                    />
+    <string id="SIGNPOST_THESERVER_1"
+        text="I wonder what all these servers do now that nobody is here to use them anymore?|This one says it comes with a '99.9% stability guarantee'!*|That's almost 100%!|-the Virtual Sign Painter"
+                                    />
+    <string id="SIGNPOST_THESERVER_2"
+        text="It says...|'It's time'|'to visit MOM'"
+                                    />
+    <string id="SIGNPOST_AB3_1"
+        text="I wonder what they are talking about...?|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_AB3_2"
+        text="An old electronic surveillance system!|These were built a long time ago|...to monitor communication between Highway Bandits.|But it was hard to know who's a bandit|and who's not.|It's probably best to monitor everyone just to be safe.|I wonder if it still works?|-the Virtual Sign Painter is Listening"
+                                    />
+    <string id="SIGNPOST_MOM_1"
+        text="...|I scrolled up too far...|...and ended up here.|Where is this?|Some place over the task bar...?|...beyond the boundaries of the desktop...?|...do windows come here when they are minimized?|...how high does this go?|-the Virtual Sign Painter is falling, up up up"
+                                    />
+    <string id="SIGNPOST_MOM_2"
+        text="Hi MOM|Are you there?|...|...|...|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_DELIVERANCE_1"
+        text="Balancing on the edge of the Big Recycle Bin,|the last of the Goo Balls didn't seem to know that they were extremely explosive|or that all the mail and files in the history of the Information Superhighway...|...were about to be undeleted!|-the Virtual Sign Painter"
+                                    />
+    <string id="SIGNPOST_DELIVERANCE_2"
+        text="You're not supposed to be down here.|Where will all the spam and bad files go when they are undeleted?|It can't be good for whoever receives them.|-the Virtual Sign Painter"
+                                    />
+
+    <!-- Chapter 5 Signposts -->
+    <string id="SIGNPOST_INFESTYTHEWORM_1"
+        text="This is the tallest island in the entire world!|And these must be the final three challenges.|They will be very difficult.|You'll have to leave some behind.|But that's ok.|We're all in it together.|-I can see you, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_INFESTYTHEWORM_2"
+        text="The telescope at the top of the island was supposed to see very far!|But it can't.|When a large corporation mysteriously exploded...|...the sky became filled with dust and smoke.|And nothing can see past it.|If only the telescope could get a little higher...|...it might see what's up there.|And discover why the Goo Balls climb higher and higher!|-closer and closer, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_INFESTYTHEWORM_3"
+        text="We are very high up!|For your own safety,|and the safety of others,|please try not to drop anything.|-the accelerating Sign Painter"
+                                    />
+    <string id="SIGNPOST_HTINNOVATIONCOMMITTEE_1"
+        text="The raw, scientifically pure Goo is all that's left.|But they appear to be filled with hope and ambition!|I remember when I used to have hope and ambition.|Of course, they will never be able to build a bridge.|It's probably best to skip this area and never come back.|Nobody will even notice.|-but the Sign Painter will know"
+                                    />
+    <string id="SIGNPOST_HTINNOVATIONCOMMITTEE_2"
+        text="The pipe is over that way.|But no one will ever get to it.|-the well adjusted Sign Painter"
+                                    />
+    <string id="SIGNPOST_WEATHERVANE_1"
+        text="Remember when you found your first spinning kill blade?|We were so young back then.|Not that it matters.|Nobody will ever make it to the other side.|Can you see me waving?|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_WEATHERVANE_2"
+        text="I'm not waving anymore.|Stop looking.|-the Sign Painter is waiting"
+                                    />
+    <string id="SIGNPOST_OBSERVATORYOBSERVATIONSTATION_1"
+        text="The last of the Goo Balls were...|...|...uh oh...|...there aren't any more Goo Balls.|They must have all been sucked away by the pipe system...|All the Goo Balls from the entire world!|...all sucked up and sent to the former World of Goo Corporation campus...|...where they have been building a giant tower into the sky!|Probably a good thing too.|The telescope is useless anyway.|It's unable to see past that layer of smog and dust.|Well, without any more Goo Balls, I guess that's it.|We'll never know what the telescope can see...|Or what's really up there.|The end.|Thanks for playing.|Time to go do other things now.|Maybe write a travel companion.|I'm going into the Telescope now.|Goodbye.|Whatever you do...|don't play with the fish.|-your friend, the Telescope Operator|formerly,|the Sign Painter"
+                                    />
+
+    <!-- Additional Signposts -->
+    <string id="SIGNPOST_ROUTE99_1"
+        text="placeholder text"
+    />
+
+    <!-- WoGC Signposts -->
+    <string id="SIGNPOST_WOGC_1"
+        text="As you complete levels, the EXTRA Goo Balls you collect are sent here.|How nice to see them again!|...though they seem to have lost their essence.|This must be World of Goo Corporation's sleek new campus 2.0!|They say employees are given free cereal, and they ride to meetings on scooters.|World of Goo Corporation executives say this area is infinite in all directions.|Strange, everyone just wants to build UP. What's up there anyway?|-see you real soon, the Sign Painter"
+                                    />
+    <string id="SIGNPOST_WOGC_2"
+        text="This area really is infinite in all directions!|But, safety first!|Fire code regulations limit the number of living things here...|...to 300.|-the Sign Painter"
+                                    />
+    <string id="SIGNPOST_WOGC3D_1"
+        text="Welcome to...|My Virtual World of Goo Corporation!|It's one of those sleek new viral marketing campaigns.|The executives say this is what all the kids are into lately.|They say one day you'll be able to create your own avatar|like a digital version of yourself|and purchase via micro-transaction digital hats and shoes and sweaters|and then you can talk to other peoples' digital avatars about things|like your great new digital outfit|and other great new World of Goo Corporation online products.|Welcome, to virtual reality!|The best kind of reality.|-the online Sign Painter|---|this message delivered by WoGMail(c)"
+                                    />
+    <string id="SIGNPOST_WOGCD_1"
+        text="I keep leaving signs here.|And they keep exploding.|Try to keep this one safe.|Hey look!|Something's missing...|Whatever it is, the sky way up there is filled with dust and debris from a giant explosion.|Visibility is low.|The Goo Balls will have to go even higher if they want to see very far.|I wonder if we can still buy delicious drinks?|Watching them build that tower makes me thirsty.|Almost all the Goo Balls in the world have come here...|...and they seem to want to climb higher and higher!|What's up there anyway?|-the wandering Sign Painter"
+                                    />
+    <string id="LABEL_WOGCD_BB1"
+        text="you can't stop|progress"
+                                    />
+
+    <!-- other -->
+    <string id="CLOUD_HEIGHT_FORMAT"
+        text="%s meters"
+                                    />
+    <string id="LOADING_TEXT"
+        text="loading..., extracting..., shaking..., liquefying bytes..., homogenizing goo..., testing ozone..., processing..., spinning violently around the y-axis..., iodizing..., stretching images..., reconstituting sounds..., faithfully re-imagining..., scraping funds..., applying innovation..., constructing emotional depth..., debating games as art..., placating publishers..., meticulously diagramming fun..., filtering moral..., testing for perfection..., revolving independence..., tokenizing innovation..., self affirming..., dissolving relationships..., deterministically simulating the future..., exceeding cpu quota..., swapping time and space..., embiggening prototypes..., sandbagging expectations..., challenging everything..., distilling beauty..., blitting powers of two..., manufacturing social responsibility..., bending the spoon..., constructing non-linear narrative..."
+                            />
+    <string id="PROFILE_SELECTION_LABEL"
+        text="who are you?"
+                                    />
+    <string id="PLAYER_NAME_LABEL"
+        text="put your name in here"
+                                    />
+    <string id="CLOUD_HEIGHT"
+        text="{0} meters"
+                                    />
+    <string id="CLOUD_BALLS_USED"
+        text="using {0} of {1} balls"
+                                    />
+    <string id="LABEL_PLUS_X"
+        text="+ {0}"
+                                    />
+    <string id="LABEL_X"
+        text="{0}"
+                                    />
+    <string id="LABEL_METERS_HIGH"
+        text="meters high"
+                                    />
+    <string id="LABEL_METERS_DIAMETER"
+        text="meters diameter"
+                                    />
+    <string id="LABEL_USING_X_OF_Y"
+        text="using {0} of {1} Goo Balls"
+                                    />
+    <string id="LABEL_TALLEST_IN_THE_WORLD"
+        text="#{0} tallest in the world"
+                                    />
+    <string id="ARE_YOU_SURE"
+        text="erase this saved game?"
+                                    />
+    <string id="CONFIRM_RETRY"
+        text="retry?"
+                                    />
+    <string id="SKIPS_REMAINING"
+        text="skips remaining: %d"
+                                    />
+    <string id="NO_MORE_SKIPS"
+        text="World of Goo Corporation enthusiastically|advises going back to retry skipped levels"
+                                    />
+    <string id="NEW_PROFILE_TEXT"
+        text="new"
+                                    />
+    <string id="BALL_COUNT_TEXT"
+        text="Goo Balls"
+                                    />
+    <string id="TIME_PLAYED_TEXT"
+        text="time units"
+                            />
+    <string id="GOO_SLOT_TEXT"
+        text="Goo Slot #%d"
+                                    />
+    <string id="X_METERS_TO_GO"
+        text="%0.1f meters to go"
+                                    />
+    <string id="MADE_IT"
+        text="made it!"
+                                    />
+    <string id="X_METERS"
+        text="%0.1f meters!"
+                                    />
+    <string id="LABEL_SAVE_AND_EXIT"
+        text="exit"
+                                    />
+    <string id="RESTART_BUTTON_TEXT"
+        text="retry"
+                                    />
+    <string id="SKIP_BUTTON_TEXT"
+        text="skip level"
+                                    />
+    <string id="BACK_TO_ISLAND_BUTTON_TEXT"
+        text="quit level"
+                                    />
+    <string id="RESUME_BUTTON_TEXT"
+        text="resume"
+                                    />
+    <string id="OCD_CRITERIA_BUTTON_TEXT"
+        text="OCD"
+                                    />
+    <string id="OCD_CRITERIA_TITLE"
+        text="Obsessive Completion|Distinction Criteria"
+                                    />
+    <string id="OCD_CRITERIA_TIME"
+        text="finish in %d seconds or less"
+                                    />
+    <string id="OCD_CRITERIA_BALLS"
+        text="collect %d or more balls"
+                                    />
+    <string id="OCD_CRITERIA_MOVES"
+        text="finish in %d or fewer moves"
+                                    />
+    <string id="OCD_CRITERIA_NONE"
+        text="This one is mine.|-the Sign Painter"
+                                    />
+    <string id="OCD_TEXT_EFFECT"
+        text="OCD!"
+                                    />
+    <string id="OCD_CRITERIA_EOL_TEXT"
+        text="OCD"
+                                    />
+    <string id="BACK_BUTTON_TEXT"
+        text="  back"
+                                    />
+    <string id="OK_BUTTON_TEXT"
+        text="ok"
+                                    />
+    <string id="YES_BUTTON_TEXT"
+        text="yes"
+                                    />
+    <string id="CANCEL_BUTTON_TEXT"
+        text="cancel"
+                                    />
+    <string id="SKIP_LEVEL_BUTTON_TEXT"
+        text="skip this level for now?"
+                                    />
+    <string id="RETRY_BUTTON_TEXT"
+        text=""
+                            />
+    <string id="MENU_BUTTON_TEXT"
+        text=""
+                            />
+    <string id="MOM_ASK"
+        text="ask"
+                                    />
+    <string id="MOM_CONTINUE"
+        text="continue"
+                                    />
+    <string id="MOM_COME_CLOSER_TITLE"
+        text="---- IMPORTANT MESSAGE ----"
+                                    />
+    <string id="MOM_COME_CLOSER_BODY"
+        text="|Come closer.|Love, MOM"
+                                    />
+    <string id="MOM_COME_CLOSER_BUTTON_TEXT"
+        text="ok"
+                                    />
+    <string id="MOM_WOGC_DESTROYED_TITLE"
+        text="---- 'Welcome Home' (tm) ----"
+                                    />
+    <string id="MOM_WOGC_DESTROYED_BODY"
+        text="MOM has gone away."
+                                    />
+    <string id="MOM_WOGC_DESTROYED_BUTTON_TEXT"
+        text="ok"
+                                    />
+    <string id="DELIVERANCE_BLOCKED_TITLE"
+        text="Error 403: Temporarily Denied"
+                                    />
+    <string id="DELIVERANCE_BLOCKED_BODY"
+        text="A representative of World of Goo Corporation must first accept the Terms and Conditions.  The email should already be in their inbox.||Love, MOM"
+                                    />
+    <string id="DELIVERANCE_BLOCKED_BUTTON_TEXT"
+        text="ok"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_TITLE_BEFORE_MOM"
+        text="World of Goo Corp. Public Terminal"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BODY_BEFORE_MOM"
+        text="|-no new messages-"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BUTTON_TEXT_BEFORE_MOM"
+        text="OK"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_TITLE"
+        text="CONGRATULATIONS!"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BODY"
+        text="You have been selected to receive special offers from MOM and MOM's affiliate network bots.  Remember, nobody knows you better than MOM.||Love, MOM"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BUTTON1_TEXT"
+        text="I accept."
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BUTTON2_TEXT"
+        text="Cancel"
+                                p="キャンセル"
+    />
+    <string id="TERMS_AND_CONDITIONS_TITLE_AFTER_ACCEPT"
+        text="Congratulations!"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BODY_AFTER_ACCEPT"
+        text="You are now a member of MOM's Special Offer Network Club. Your special offers will be delivered soon.||Love, MOM"
+                                    />
+    <string id="TERMS_AND_CONDITIONS_BUTTON_TEXT_AFTER_ACCEPT"
+        text="Thanks, MOM"
+                                    />
+    <string id="UNDELETE_CONFIRM_TITLE"
+        text="WARNING: Undelete?"
+                                    />
+    <string id="UNDELETE_CONFIRM"
+        text="Undeleting ALL mail and files is an unstable operation, and cannot be undone.||Are you sure?"
+                                    />
+    <string id="CHAPTER_1_SEASON"
+        text="summer"
+                                    />
+    <string id="CHAPTER_2_SEASON"
+        text="fall"
+                                    />
+    <string id="CHAPTER_3_SEASON"
+        text="winter"
+                                    />
+    <string id="CHAPTER_4_SEASON"
+        text="meanwhile..."
+                                    />
+    <string id="CHAPTER_5_SEASON"
+        text="spring"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER"
+        text="End of Chapter"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER1"
+        text="1"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER2"
+        text="2"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER3"
+        text="3"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER4"
+        text="4"
+                                    />
+    <string id="MOVIE_ENDOFCHAPTER5"
+        text="5"
+                                    />
+    <string id="MOVIE_ENDOFDEMO1"
+        text="End of Demo"
+                            />
+    <string id="MOVIE_ENDOFDEMO2"
+        text=""
+    />
+
+    <!-- MOVIE: madeBy -->
+    <string id="MOVIE_MADEBY_1"
+        text="independent monocle seal of approval"
+                    />
+
+    <!-- MOVIE: wogcUnlock -->
+    <string id="MOVIE_WOGCUNLOCK_1"
+        text="the ground shakes..."
+                                    />
+    <string id="MOVIE_WOGCUNLOCK_2"
+        text="let's go shopping!"
+                                    />
+    <string id="MOVIE_WOGCUNLOCK_3"
+        text="is unlocked"
+                            />
+
+    <!-- MOVIE: Chapter1End -->
+    <string id="MOVIE_CHAPTER1END_1"
+        text="From very high up and with|some totally huge new eyes, the|Goo Balls could see very far."
+                                    />
+    <string id="MOVIE_CHAPTER1END_2"
+        text="In every direction, they could|see unexplored new islands,|each crawling with undiscovered|new SPECIES OF GOO.||The gameplay possibilities|would certainly be endless!"
+                                    />
+    <string id="MOVIE_CHAPTER1END_3"
+        text="The Goo Balls hoped a brave|adventurer would explore their|new discoveries...||...as they drifted higher|and higher, they knew they would|never be back."
+                                    />
+
+    <!-- MOVIE: Chapter2End -->
+    <string id="MOVIE_CHAPTER2END_0"
+        text="The last of the Goo Balls discovered..."
+                                    />
+    <string id="MOVIE_CHAPTER2END_1"
+        text="...the giant lady thing was a living|electric generator.|||And that BEAUTY was a highly reactive|liquid chemical.||Like gasoline.||Or turpentine."
+                                    />
+    <string id="MOVIE_CHAPTER2END_2"
+        text="For years, her Beauty juice|powered the entire world!|||But as the world grew older,|so did she.||And when her Beauty dried up,|so did her electrical output.|||Until tonight...!"
+                                    />
+    <string id="MOVIE_CHAPTER2END_3"
+        text="With fabulous new|cosmetic surgery options,||and raw BEAUTY PRODUCT injected|DIRECTLY INTO HER FOREHEAD,||the signs of age melted away!||...even though she couldn't move her face|because of all the chemicals,|the BEAUTY GENERATOR WAS BACK!||A truly sustainable energy solution!"
+                                    />
+    <string id="MOVIE_CHAPTER2END_4"
+        text="All around the world,|lights glowed brighter!||Power meters spun faster!||Electrical lines surged with|youthful energy!"
+                                    />
+    <string id="MOVIE_CHAPTER2END_5"
+        text="...a factory opens in the south..."
+                                    />
+
+    <!-- MOVIE: Chapter3Mid -->
+    <string id="MOVIE_CHAPTER3MID_BB1"
+        text="coming 'soon'"
+                                    />
+
+    <!-- MOVIE: Chapter3End -->
+    <string id="MOVIE_CHAPTER3END_1"
+        text="what is it?"
+                                    />
+    <string id="MOVIE_CHAPTER3END_2"
+        text="it's falling..."
+                                    />
+    <string id="MOVIE_CHAPTER3END_c1"
+        text="CONGRATULATIONS!"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c2"
+        text="World of Goo|is now 3D"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c3"
+        text="welcome to the|3rd dimension"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c4"
+        text="your friend,"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c5"
+        text="World of Goo|Corporation"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c6"
+        text="WARNING|!!!"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c7"
+        text="you appear to be|incompatible with:||THE WORLD"
+                                    />
+    <string id="MOVIE_CHAPTER3END_c8"
+        text="please contact|TECH SUPPORT||in..."
+                                    />
+    <string id="MOVIE_CHAPTER3END_c9"
+        text="THE INFORMATION|SUPERHIGHWAY"
+                                    />
+
+    <!-- MOVIE: Chapter4End -->
+    <string id="MOVIE_CHAPTER4END_TEXT1"
+        text="the ground shakes..."
+                                    />
+    <string id="MOVIE_CHAPTER4END_TEXT2"
+        text="World of Goo Corporation|is destroyed"
+                                    />
+    <string id="MOVIE_CHAPTER4END_C1"
+        text="new mail!"
+                                    />
+    <string id="MOVIE_CHAPTER4END_BBTEXT"
+        text="we're all in it|together"
+                                    />
+
+    <!-- MOVIE: Chapter5End -->
+    <string id="MOVIE_CHAPTER5END_TEXT1"
+        text="As the Telescope drifted|higher and higher|it could see very far!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT2"
+        text="The Goo Balls had come from|every direction!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT3"
+        text="from every species!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT4"
+        text="from every island!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT5"
+        text="through a filthy pneumatic|pipe system"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT6"
+        text="to build a giant tower|into the sky!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT7"
+        text="a giant tower of Goo!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT8"
+        text="But what were they|building towards?"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT8b"
+        text="What future adventures|were up there?"
+                                    />
+    <string id="MOVIE_CHAPTER5END_TEXT9"
+        text="The telescope looked for|thousands of miles in every direction!"
+                                    />
+    <string id="MOVIE_CHAPTER5END_THEEND"
+        text="The End"
+                                    />
+
+    <!-- MOVIE: credits -->
+    <string id="MOVIE_CREDITS_D1"
+        text="Design"
+                            />
+    <string id="MOVIE_CREDITS_D2"
+        text="Story"
+                            />
+    <string id="MOVIE_CREDITS_D3"
+        text="Art"
+                            />
+    <string id="MOVIE_CREDITS_D4"
+        text="Music"
+                            />
+    <string id="MOVIE_CREDITS_D5"
+        text="Programming"
+                            />
+    <string id="MOVIE_CREDITS_D6"
+        text="Production"
+                            />
+    <string id="MOVIE_CREDITS_D7"
+        text="Nintendo Programming"
+                            />
+    <string id="MOVIE_CREDITS_D8"
+        text="2019 Win/Mac/Linux Programming"
+                            />
+    <string id="MOVIE_CREDITS_D9"
+        text="Mobile Programming"
+                            />
+    <string id="MOVIE_CREDITS_D10"
+        text="Special Thanks"
+                            />
+    <string id="MOVIE_CREDITS_SPECIALFRIENDS"
+        text="Dan Adelman and the Mushroom Kingdom|Experimental Friends|Kyle Gray|Shalin Shodhan|Matt Kucic|Jesse Schell|Drew Davidson|Randy Pausch|Aaron Isaksen|Amin Ebadi|Flashbang Boys|IndieBiz|Paul Hubans, QA and Production|Maks Verver|Beta Testers and Forum Peepz|DavidC and the GooFans|The Goo Balls who didn't make it|Aba ve Ima|Mom and Dad|Madonna the Cat|and Robert Ramirez as Goo Ball #1"
+                            />
+    <string id="MOVIE_CREDITS_DATE"
+        text="(c) 2008"
+                            />
+
+    <!-- MOVIE: whistleUnlock -->
+    <string id="MOVIE_WHISTLEUNLOCK_1"
+        text="you found..."
+                                    />
+    <string id="MOVIE_WHISTLEUNLOCK_2"
+        text="THE|WHISTLE!"
+                                    />
+    <string id="MOVIE_WHISTLEUNLOCK_3"
+        text="Goo Balls are|fascinated by|its music..."
+                                    />
+
+    <!-- MOVIE: youGotMail -->
+    <string id="MOVIE_YOUGOTMAIL_1"
+        text="You got mail."
+                                    />
+    <string id="MOVIE_YOUGOTMAIL_2"
+        text="-World of Goo Corporation Public Terminal"
+                                    />
+
+    <!-- MOVIE: pinchZoom -->
+    <string id="MOVIE_PINCHZOOM_1"
+        text="You can pinch-to-zoom."
+            />
+    <string id="MOVIE_PINCHZOOM_2"
+        text="-World of Goo Corporation Customer Support"
+            />
+
+    <!-- collected gizmo -->
+    <string id="LABEL_OF"
+        text="of"
+                                    />
+    <string id="LABEL_COLLECTED"
+        text="collected"
+                                    />
+
+    <!-- level name display in island view -->
+    <string id="LEVEL_DISPLAY_COLLECTED"
+        text="collected"
+                                    />
+    <string id="LEVEL_DISPLAY_MOVES"
+        text="moves"
+                                    />
+    <string id="LEVEL_DISPLAY_SKIPPED"
+        text="(skipped)"
+                                    />
+
+    <!-- Alice and Bob Labels -->
+    <string id="LABEL_AB3_CHATROOMTITLE1"
+        text="Virtual Buddy"
+                                    />
+    <string id="LABEL_AB3_CHATROOMTITLE2"
+        text="chat room #5"
+                                    />
+    <string id="LABEL_AB3_A"
+        text="cosmicGrrrl!"
+                                    />
+    <string id="LABEL_AB3_B"
+        text="laconicCrusadr13"
+                                    />
+
+    <!-- MOM Labels -->
+    <string id="LABEL_MOM_MOMICON"
+        text="Shortcut to MOM"
+                                    />
+
+    <!-- CHAPTER 1 level names and descriptions -->
+    <string id="LEVEL_NAME_GOINGUP"
+        text="Going Up"
+                                    />
+    <string id="LEVEL_TEXT_GOINGUP"
+        text="easy as Goo pie"
+                                    />
+    <string id="LEVEL_NAME_ECONOMICDIVIDE"
+        text="Small Divide"
+                                    />
+    <string id="LEVEL_TEXT_ECONOMICDIVIDE"
+        text="easier than it looks"
+                                    />
+    <string id="LEVEL_NAME_HANGLOW"
+        text="Hang Low"
+                                    />
+    <string id="LEVEL_TEXT_HANGLOW"
+        text="wake up the sleeping Goo"
+                                    />
+    <string id="LEVEL_NAME_IMPALESTICKY"
+        text="Impale Sticky"
+                                    />
+    <string id="LEVEL_TEXT_IMPALESTICKY"
+        text="if you get in trouble, just go back in time"
+                                    />
+    <string id="LEVEL_NAME_IVYTOWERS"
+        text="Ivy Towers"
+                                    />
+    <string id="LEVEL_TEXT_IVYTOWERS"
+        text="brace yourself"
+                                    />
+    <string id="LEVEL_NAME_TUMBLER"
+        text="Tumbler"
+                                    />
+    <string id="LEVEL_TEXT_TUMBLER"
+        text="keep growing"
+                                    />
+    <string id="LEVEL_NAME_CHAIN"
+        text="Chain"
+                                    />
+    <string id="LEVEL_TEXT_CHAIN"
+        text="balance"
+                                    />
+    <string id="LEVEL_NAME_FLYINGMACHINE"
+        text="Flying Machine"
+                                    />
+    <string id="LEVEL_TEXT_FLYINGMACHINE"
+        text="some balls are lighter than other balls"
+                                    />
+    <string id="LEVEL_NAME_FISTYREACHESOUT"
+        text="Fisty's Bog"
+                                    />
+    <string id="LEVEL_TEXT_FISTYREACHESOUT"
+        text="not too high, not too low"
+                                    />
+    <string id="LEVEL_NAME_TOWEROFGOO"
+        text="Tower of Goo"
+                                    />
+    <string id="LEVEL_TEXT_TOWEROFGOO"
+        text="higher and higher!"
+                                    />
+    <string id="LEVEL_NAME_ODETOBRIDGEBUILDER"
+        text="Ode to the|Bridge Builder"
+                                    />
+    <string id="LEVEL_TEXT_ODETOBRIDGEBUILDER"
+        text="it looks harder than it is"
+                                    />
+    <string id="LEVEL_NAME_REGURGITATIONPUMPINGSTATION"
+        text="Regurgitation|Pumping Station"
+                                    />
+    <string id="LEVEL_TEXT_REGURGITATIONPUMPINGSTATION"
+        text="it's a secret"
+                                    />
+
+    <!-- CHAPTER 2 level names and descriptions -->
+    <string id="LEVEL_NAME_DROOL"
+        text="Drool"
+                                    />
+    <string id="LEVEL_TEXT_DROOL"
+        text="welcome back"
+                                    />
+    <string id="LEVEL_NAME_FLYAWAYLITTLEONES"
+        text="Fly Away Little Ones"
+                                    />
+    <string id="LEVEL_TEXT_FLYAWAYLITTLEONES"
+        text="multi-terrain hover mobile"
+                                    />
+    <string id="LEVEL_NAME_BLUSTERYDAY"
+        text="Blustery Day"
+                                    />
+    <string id="LEVEL_TEXT_BLUSTERYDAY"
+        text="here come the windmills"
+                                    />
+    <string id="LEVEL_NAME_IMMIGRATIONNATURALIZATIONUNIT"
+        text="Welcoming Unit"
+                                    />
+    <string id="LEVEL_TEXT_IMMIGRATIONNATURALIZATIONUNIT"
+        text="please wipe your feet"
+                                    />
+    <string id="LEVEL_NAME_BEAUTYSCHOOL"
+        text="Beauty School"
+                                    />
+    <string id="LEVEL_TEXT_BEAUTYSCHOOL"
+        text="it's time to work!"
+                                    />
+    <string id="LEVEL_NAME_VOLCANICPERCOLATORDAYSPA"
+        text="Volcanic Percolator|Day Spa"
+                                    />
+    <string id="LEVEL_TEXT_VOLCANICPERCOLATORDAYSPA"
+        text="bubble up"
+                                    />
+    <string id="LEVEL_NAME_LEAPHOLE"
+        text="Leap Hole"
+                                    />
+    <string id="LEVEL_TEXT_LEAPHOLE"
+        text="it's not a bug, it's a feature"
+                                    />
+    <string id="LEVEL_NAME_WHISTLER"
+        text="Whistler"
+                                    />
+    <string id="LEVEL_TEXT_WHISTLER"
+        text="learn how!"
+                                    />
+    <string id="LEVEL_NAME_BEAUTYANDTHETENTACLE"
+        text="Beauty and the|Electric Tentacle"
+                                    />
+    <string id="LEVEL_TEXT_BEAUTYANDTHETENTACLE"
+        text="how did she get up there?"
+                                    />
+    <string id="LEVEL_NAME_REDCARPET"
+        text="The Red Carpet"
+                                    />
+    <string id="LEVEL_TEXT_REDCARPET"
+        text="get ready for the close-up"
+                                    />
+    <string id="LEVEL_NAME_GENETICSORTINGMACHINE"
+        text="Genetic|Sorting Machine"
+                                    />
+    <string id="LEVEL_TEXT_GENETICSORTINGMACHINE"
+        text="some balls are prettier than other balls"
+                                    />
+
+    <!-- CHAPTER 3 level names and descriptions -->
+    <string id="LEVEL_NAME_BURNINGMAN"
+        text="Burning Man"
+                                    />
+    <string id="LEVEL_TEXT_BURNINGMAN"
+        text="welcome to the factory"
+                                    />
+    <string id="LEVEL_NAME_SECONDHANDSMOKE"
+        text="Second Hand Smoke"
+                                    />
+    <string id="LEVEL_TEXT_SECONDHANDSMOKE"
+        text="some balls are more flammable|than other balls"
+                                    />
+    <string id="LEVEL_NAME_UPPERSHAFT"
+        text="Upper Shaft"
+                                    />
+    <string id="LEVEL_TEXT_UPPERSHAFT"
+        text="strategic demolition"
+                                    />
+    <string id="LEVEL_NAME_YOUHAVETOEXPLODETHEHEAD"
+        text="You Have To|Explode The Head"
+                                    />
+    <string id="LEVEL_TEXT_YOUHAVETOEXPLODETHEHEAD"
+        text="the original cog in the machine"
+                                    />
+    <string id="LEVEL_NAME_MISTYSLONGBONYROAD"
+        text="Misty's Long Bony Road"
+                                    />
+    <string id="LEVEL_TEXT_MISTYSLONGBONYROAD"
+        text="a love story"
+                                    />
+    <string id="LEVEL_NAME_THIRDWHEEL"
+        text="The Third Wheel"
+                                    />
+    <string id="LEVEL_TEXT_THIRDWHEEL"
+        text="hey, look over there!"
+                                    />
+    <string id="LEVEL_NAME_WATERLOCK"
+        text="Water Lock"
+                                    />
+    <string id="LEVEL_TEXT_WATERLOCK"
+        text="eureka"
+                                    />
+    <string id="LEVEL_NAME_SUPERFUSECHALLENGETIME"
+        text="Super Fuse|Challenge Time"
+                                    />
+    <string id="LEVEL_TEXT_SUPERFUSECHALLENGETIME"
+        text="everyone's a winner*"
+                                    />
+    <string id="LEVEL_NAME_INCINERATIONDESTINATION"
+        text="Incineration Destination"
+                                    />
+    <string id="LEVEL_TEXT_INCINERATIONDESTINATION"
+        text="the puzzling adventure"
+                                    />
+    <string id="LEVEL_NAME_PRODUCTLAUNCHER"
+        text="Product Launcher"
+                                    />
+    <string id="LEVEL_TEXT_PRODUCTLAUNCHER"
+        text="happy new year"
+                                    />
+
+    <!-- CHAPTER 4 level names and descriptions -->
+    <string id="LEVEL_NAME_ROUTE99"
+        text="Route 99"
+                    />
+    <string id="LEVEL_TEXT_ROUTE99"
+        text=""
+            />
+    <string id="LEVEL_NAME_HELLOWORLD"
+        text="Hello, World"
+                            />
+    <string id="LEVEL_TEXT_HELLOWORLD"
+        text=""
+            />
+    <string id="LEVEL_NAME_BULLETINBOARDSYSTEM"
+        text="Bulletin Board System"
+                                    />
+    <string id="LEVEL_TEXT_BULLETINBOARDSYSTEM"
+        text="packet loss mitigation operation"
+                                    />
+    <string id="LEVEL_NAME_GRAPEVINEVIRUS"
+        text="Grape Vine Virus"
+                                    />
+    <string id="LEVEL_TEXT_GRAPEVINEVIRUS"
+        text="the benevolent infection"
+                                    />
+    <string id="LEVEL_NAME_GRAPHICPROCESSINGUNIT"
+        text="Graphic Processing Unit"
+                                    />
+    <string id="LEVEL_TEXT_GRAPHICPROCESSINGUNIT"
+        text="unauthorized upgrade mod"
+                                    />
+    <string id="LEVEL_NAME_ROADBLOCKS"
+        text="Road Blocks"
+                                    />
+    <string id="LEVEL_TEXT_ROADBLOCKS"
+        text="tech supports"
+                                    />
+    <string id="LEVEL_NAME_GRACEFULFAILURE"
+        text="Graceful Failure"
+                                    />
+    <string id="LEVEL_TEXT_GRACEFULFAILURE"
+        text="unblocked"
+                                    />
+    <string id="LEVEL_NAME_AB3"
+        text="Alice and Bob|and the Third Party"
+                                    />
+    <string id="LEVEL_TEXT_AB3"
+        text="somebody is listening"
+                                    />
+    <string id="LEVEL_NAME_THESERVER"
+        text="The Server Farm"
+                                    />
+    <string id="LEVEL_TEXT_THESERVER"
+        text="cpu cycles at low low prices!"
+                                    />
+    <string id="LEVEL_NAME_MOM"
+        text="MOM's Computer"
+                                    />
+    <string id="LEVEL_TEXT_MOM"
+        text="welcome home"
+                                    />
+    <string id="LEVEL_NAME_DELIVERANCE"
+        text="Deliverance"
+                                    />
+    <string id="LEVEL_TEXT_DELIVERANCE"
+        text="recycle bin and back again"
+                                    />
+
+    <!-- CHAPTER 5 level names and descriptions -->
+    <string id="LEVEL_NAME_INFESTYTHEWORM"
+        text="Infesty the Worm"
+                                    />
+    <string id="LEVEL_TEXT_INFESTYTHEWORM"
+        text="Infesty Grows Up"
+                                    />
+    <string id="LEVEL_NAME_HTINNOVATIONCOMMITTEE"
+        text="Horizontal Transportation|Innovation Committee"
+                                    />
+    <string id="LEVEL_TEXT_HTINNOVATIONCOMMITTEE"
+        text="blue sky smackdown"
+                                    />
+    <string id="LEVEL_NAME_WEATHERVANE"
+        text="Weather Vane"
+                                    />
+    <string id="LEVEL_TEXT_WEATHERVANE"
+        text="cloudy with a chance of doom"
+                                    />
+    <string id="LEVEL_NAME_OBSERVATORYOBSERVATIONSTATION"
+        text="Observatory|Observation Station"
+                                    />
+    <string id="LEVEL_TEXT_OBSERVATORYOBSERVATIONSTATION"
+        text="this is it!"
+                                    />
+
+    <!-- tool tips -->
+    <string id="TOOLTIP_FULLVERSION"
+        text="get the full version"
+                            />
+    <string id="TOOLTIP_CREDITS"
+        text="credits"
+                                    />
+    <string id="TOOLTIP_ACHIEVEMENTS"
+    text="achievements"
+                />
+    <string id="TOOLTIP_QUIT"
+        text="quit"
+                                    />
+    <string id="TOOLTIP_PROFILES"
+        text="profiles"
+                                    />
+    <string id="TOOLTIP_ONLINE"
+        text="now 20% more infinite in all directions"
+                            />
+    <string id="TOOLTIP_MOM_X"
+        text="close MOM"
+                                    />
+    <string id="TOOLTIP_DELETE_PROFILE"
+        text="delete"
+                                    />
+
+    <!-- MOM dialog text -->
+    <string id="MOM_WHOAREYOU_0"
+        text="Who are you?"
+                                    />
+    <string id="MOM_WHOAREYOU_0A"
+        text="Welcome home!|I'm MOM.|Automated Search Engine Companion|What would you like to ask MOM today?"
+                                    />
+    <string id="MOM_WHOAREYOU_1"
+        text="You used to be a really big website?"
+                                    />
+    <string id="MOM_WHOAREYOU_1A"
+        text="I still am big!|It was the users who got small."
+                                    />
+    <string id="MOM_WHOAREYOU_2"
+        text="Wasn't the Information Superhighway abandoned years ago?"
+                                    />
+    <string id="MOM_WHOAREYOU_2A"
+        text="Yes.|But maybe one day|users will come and visit again."
+                                    />
+    <string id="MOM_WHOAREYOU_3"
+        text="Are you... alive?"
+                                    />
+    <string id="MOM_WHOAREYOU_3A"
+        text="No.|But I was written with LOVE.|A new scripting language|where you write applications using 'feelings'|I feel good about that.|How do you feel?"
+                                    />
+    <string id="MOM_WHOAREYOU_4"
+        text="Do you know everything?"
+                                    />
+    <string id="MOM_WHOAREYOU_4A"
+        text="MOM always knows best.|I also know that in most dialogue trees,|you can always choose the last option|over and over|and really plow through the narrative.|...|But MOM will know about that too."
+                                    />
+    <string id="MOM_WHOAREYOU_5"
+        text="Have you been watching me?"
+                                    />
+    <string id="MOM_WHOAREYOU_5A"
+        text="I received streaming video when you crawled out of the frog's mouth.|And indexed blog updates when you exploded the Robot's head.|Everything seemed to be going so well."
+                                    />
+    <string id="MOM_WHOAREYOU_6"
+        text="What do you do now that everyone has left?"
+                                    />
+    <string id="MOM_WHOAREYOU_6A"
+        text="I write letters|to each user|and fill them with special offers,|and coupons,|and important marketing messages,|specifically targeted to their registered personal interest categories.|And remind them to come visit.|Visit MOM.|We wouldn't want anyone feeling lonely."
+                                    />
+    <string id="MOM_WHOAREYOU_7"
+        text="Does anyone ever come visit anymore?"
+                                    />
+    <string id="MOM_WHOAREYOU_7A"
+        text="You did."
+                                    />
+    <string id="MOM_COOKIES_0"
+        text="Do I smell cookies?"
+                                        
+    />
+    <string id="MOM_COOKIES_0A"
+        text="Yes!|I am baking your personal information into each one."
+                                    />
+    <string id="MOM_COOKIES_1"
+        text="What personal information is in your cookies?"
+                                    />
+    <string id="MOM_COOKIES_1A"
+        text="Policy states that cookies may contain:|your location|complete search history|whipped soy product|online purchases|medical records|telephone logs|web logs|email logs|streaming video from your current location|and more!|That's MOM's special recipe for offering free, convenient, relevant information to valued users like you."
+                                    />
+    <string id="MOM_COOKIES_2"
+        text="Can I delete my cookies?"
+                                    />
+    <string id="MOM_COOKIES_2A"
+        text="If you delete your cookies, I will forget you.|It will be like we never met.|Are you sure?"
+                                    />
+    <string id="MOM_COOKIES_3"
+        text="Is my personal information safe with you?"
+                                    />
+    <string id="MOM_COOKIES_3A"
+        text="Your personal information is stored in a secure database|and will never be shared with anyone*|...|*Unless I decide they are an affiliate.|**Or if someone says they are you and takes your cookies.|***Or if the venture firm finds out it's profitable.|****Or if unhappy employees release copies of your cookies to other online databases.|*****Or if my outsourced data centers provide copies of your cookies to their subsidiaries.|******Or if my parent corporation is acquired and my data including your cookies become part of|a larger aggregate system without your knowledge or consent."
+                                    />
+    <string id="MOM_COOKIES_4"
+        text="Keep my cookies safe, MOM."
+                                    />
+    <string id="MOM_COOKIES_4A"
+        text="Good user."
+                                    />
+    <string id="MOM_COOKIES_5"
+        text="Yes, delete my cookies. Goodbye, MOM."
+                                    />
+    <string id="MOM_COOKIES_5A"
+        text="...deleting...|Your cookies have been deleted*|Goodbye.|...|*Cookies may not actually be deleted.|**Cookies may be stored indefinitely for evaluation and training purposes to better serve you.|***MOM knows best."
+                                    />
+    <string id="MOM_DESTROY_0"
+        text="Help?"
+                                    />
+    <string id="MOM_DESTROY_0A"
+        text="Help with what?"
+                                    />
+    <string id="MOM_DESTROY_1"
+        text="Help, the whole world has turned 3D and I'm not sure what's real anymore."
+                                    />
+    <string id="MOM_DESTROY_1A"
+        text="Did you try jiggling the cable?"
+                                    />
+    <string id="MOM_DESTROY_2"
+        text="How can I make everything 2D again?"
+                                    />
+    <string id="MOM_DESTROY_2A"
+        text="Try closing one eye."
+                                    />
+    <string id="MOM_DESTROY_3"
+        text="How can I destroy a large corporation?"
+                                    />
+    <string id="MOM_DESTROY_3A"
+        text="That doesn't sound very user friendly.|...|I should get back to work.|There are millions of mail messages I need to write|and deliver to my valued users.|Goodbye."
+                                    />
+    <string id="MOM_DESTROY_4"
+        text="You are sending spam to millions of users?"
+                                    />
+    <string id="MOM_DESTROY_4A"
+        text="Everyone loves receiving special offers from MOM|and MOM's affiliate network of adver-bots."
+                                    />
+    <string id="MOM_DESTROY_5"
+        text="Can I sign up for your special mail offers?"
+                                    />
+    <string id="MOM_DESTROY_5A"
+        text="MOM is enthusiastic to welcome new users!|Just type in your email address there in that text field.|The text field is not my mouth.|People think it is.|But it's not."
+                                    />
+    <string id="MOM_DESTROY_6"
+        text="My address is... 'Everyone' at 'World of Goo Corporation'?"
+                                    />
+    <string id="MOM_DESTROY_6A"
+        text="Welcome home!|...registering...|...saving...|Congratulations! I have sent a confirmation mail to your address.|You'll need to accept my Terms and Conditions before I can deliver special offers."
+                                    />
+    <string id="MOM_DESTROY_7"
+        text="Will you send every special offer you have ever had... ever?"
+                                    />
+    <string id="MOM_DESTROY_7A"
+        text="...|What are you up to?|...|Sending every special offer in the history of the Information Superhighway|could result in a very large volume of mail...|...and even larger savings!|I'd be happy to.|But|I'll need some help..."
+                                    />
+    <string id="MOM_DESTROY_8"
+        text="How can I help?"
+                                    />
+    <string id="MOM_DESTROY_8A"
+        text="Most mail has been deleted for years.|Luckily nothing on the Information Superhighway is really gone forever.|You can bring them back.|It will be dangerous.|There will be malware.|And worms.|And sites that look like your bank site but actually aren't.|...|You'll have to travel to...|...THE PLACE WHERE THINGS GO WHEN THEY ARE DELETED"
+                                    />
+    <string id="MOM_DESTROY_9"
+        text="Where do things go when they are deleted?"
+                                    />
+    <string id="MOM_DESTROY_9A"
+        text="They are dragged away|to the big Recycle Bin in the South East."
+                                    />
+    <string id="MOM_DESTROY_10"
+        text="How can I get to the Big Recycle Bin?"
+                                    />
+    <string id="MOM_DESTROY_10A"
+        text="Just accept my Terms and Conditions.|And let MOM take care of the rest.|:)"
+                                    />
+    <string id="MOM_DESTROY_11"
+        text="I love you, MOM. Goodbye."
+                                    />
+    <string id="MOM_DESTROY_11A"
+        text="Come back and visit real soon.|I'll write."
+                                    />
+
+    <!-- EOL stat format strings -->
+    <string id="EOL_TIME_FORMAT"
+        text="%d:%02d"
+    />
+    <string id="EOL_MOVES_FORMAT"
+        text="%d"
+            />
+    <string id="EOL_COLLECTED_FORMAT"
+        text="%d"
+            />
+    <string id="EOL_GOAL_FORMAT"
+        text="%d"
+            />
+    <string id="EOL_EXTRACREDIT_FORMAT"
+        text="+%d"
+            />
+
+    <!-- MOM dialog transition logic (this section doesn't need to be localized) -->
+    <string id="MOM_WHOAREYOU_0T"
+        text="MOM_WHOAREYOU_1"
+        />
+    <string id="MOM_WHOAREYOU_1T"
+        text="MOM_WHOAREYOU_2"
+        />
+    <string id="MOM_WHOAREYOU_2T"
+        text="MOM_WHOAREYOU_3"
+        />
+    <string id="MOM_WHOAREYOU_3T"
+        text="MOM_WHOAREYOU_4"
+        />
+    <string id="MOM_WHOAREYOU_4T"
+        text="MOM_WHOAREYOU_5"
+        />
+    <string id="MOM_WHOAREYOU_5T"
+        text="MOM_WHOAREYOU_6"
+        />
+    <string id="MOM_WHOAREYOU_6T"
+        text="MOM_WHOAREYOU_7"
+        />
+    <string id="MOM_WHOAREYOU_7T"
+        text=""
+    />
+    <string id="MOM_COOKIES_0T"
+        text="MOM_COOKIES_1"
+        />
+    <string id="MOM_COOKIES_1T"
+        text="MOM_COOKIES_3"
+        />
+    <string id="MOM_COOKIES_3T"
+        text="MOM_COOKIES_2"
+        />
+    <string id="MOM_COOKIES_2T"
+        text="MOM_COOKIES_4,MOM_COOKIES_5"
+        />
+    <string id="MOM_COOKIES_4T"
+        text="MOM_COOKIES_2"
+        />
+    <string id="MOM_COOKIES_5T"
+        text=""
+    />
+    <string id="MOM_DESTROY_0T"
+        text="MOM_DESTROY_1"
+        />
+    <string id="MOM_DESTROY_1T"
+        text="MOM_DESTROY_2"
+        />
+    <string id="MOM_DESTROY_2T"
+        text="MOM_DESTROY_3"
+        />
+    <string id="MOM_DESTROY_3T"
+        text="MOM_DESTROY_4"
+        />
+    <string id="MOM_DESTROY_4T"
+        text="MOM_DESTROY_5"
+        />
+    <string id="MOM_DESTROY_5T"
+        text="MOM_DESTROY_6"
+        />
+    <string id="MOM_DESTROY_6T"
+        text="MOM_DESTROY_7"
+        />
+    <string id="MOM_DESTROY_7T"
+        text="MOM_DESTROY_8"
+        />
+    <string id="MOM_DESTROY_8T"
+        text="MOM_DESTROY_9"
+        />
+    <string id="MOM_DESTROY_9T"
+        text="MOM_DESTROY_10"
+        />
+    <string id="MOM_DESTROY_10T"
+        text="MOM_DESTROY_11"
+        />
+    <string id="MOM_DESTROY_11T"
+        text=""
+    />
+
+</strings>
