@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_MomTextSwap_displayloop">
+		<SetDefaults path="./" idprefix="" />
+		<Sound id="SOUND_MOVIE_MOMTEXTSWAP_DISPLAYLOOP_FLIP" path="res/movie/MomTextSwap_displayloop/flip" />
+	</Resources>
+</ResourceManifest>

@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter5End">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_FADER" path="res/movie/generic/fader" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_LF2" path="res/images/levelimages/lf2" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_EXC1" path="res/movie/Chapter5End/exc1" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_GOOBALLONLENS" path="res/movie/Chapter5End/gooBallOnLens" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_GOOBALLONLENSBLANK" path="res/movie/Chapter5End/gooBallOnLensBlank" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TELESCOPEBIG" path="res/movie/Chapter5End/telescopeBig" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BIGSIL_M2" path="res/movie/Chapter5End/bigsil_m2" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BIGSIL_GB" path="res/movie/Chapter5End/bigsil_gb" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BIGSIL_TELESCOPE" path="res/movie/Chapter5End/bigsil_telescope" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BIGSIL_M1" path="res/movie/Chapter5End/bigsil_m1" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_S1_TELESCOPE" path="res/movie/Chapter5End/s1_telescope" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_S1_ISLAND" path="res/movie/Chapter5End/s1_island" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_S1_GROUND" path="res/movie/Chapter5End/s1_ground" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_S1_BG" path="res/movie/Chapter5End/s1_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TELEMASK" path="res/movie/Chapter5End/telemask" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_GOOGLOB" path="res/images/fx/gooGlob" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_GIANTGOOBALL" path="res/movie/Chapter5End/giantGooBall" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_DISTANTTOWER" path="res/movie/Chapter5End/distantTower" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_BG" path="res/movie/Chapter5End/space_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_CHN" path="res/movie/Chapter5End/tv_chn" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_FLYAWY" path="res/movie/Chapter5End/tv_flyawy" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_HNGLW" path="res/movie/Chapter5End/tv_hnglw" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_VPDS" path="res/movie/Chapter5End/tv_vpds" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_GSM" path="res/movie/Chapter5End/tv_gsm" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_TV_BRNGMN" path="res/movie/Chapter5End/tv_brngmn" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_BODY" path="res/movie/Chapter5End/body" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_EYESR" path="res/movie/Chapter5End/eyesR" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_EYESL" path="res/movie/Chapter5End/eyesL" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_SUN" path="res/movie/Chapter5End/space_sun" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_EXC2" path="res/movie/Chapter5End/exc2" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_EXC3" path="res/movie/Chapter5End/exc3" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_DISTEYES1" path="res/movie/Chapter5End/space_disteyes1" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_DISTEYES2" path="res/movie/Chapter5End/space_disteyes2" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_DISTEYES3" path="res/movie/Chapter5End/space_disteyes3" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_DISTEYES4" path="res/movie/Chapter5End/space_disteyes4" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_DISTEYES5" path="res/movie/Chapter5End/space_disteyes5" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_TRAVEL" path="res/movie/Chapter5End/space_travel" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_SPACE_GLOBE" path="res/movie/Chapter5End/space_globe" />
+		<Image id="IMAGE_MOVIE_CHAPTER5END_S4_MIST" path="res/movie/generic/s4_mist" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_SHAKE1" path="res/movie/Chapter5End/shake1" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_SHAKE2" path="res/movie/Chapter5End/shake2" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_SHAKE3" path="res/movie/Chapter5End/shake3" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_CONVERTWORLD" path="res/movie/generic/convertWorld" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_SCRAPESCRAPESCRAPE" path="res/movie/Chapter5End/scrapescrapescrape" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_UPPERWIND" path="res/movie/Chapter5End/upperWind" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_DISCOVERY1" path="res/sounds/discovery1" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_DISCOVERY2" path="res/sounds/discovery2" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_DISCOVERY3" path="res/sounds/discovery3" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_DISCOVERY4" path="res/sounds/discovery4" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_LIGHTSON" path="res/movie/generic/lightson" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_GLEE1" path="res/balls/generic/glee1" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_GLEE8" path="res/balls/generic/glee8" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_ISLAND" path="res/movie/Chapter5End/isLand" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_CHEER2" path="res/sounds/cheer2" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_BOT_EXCERPT1" path="res/music/bot_excerpt1" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_BOT_EXCERPT1_RPRS" path="res/music/bot_excerpt1_rprs" />
+		<Sound id="SOUND_MOVIE_CHAPTER5END_WOGTHEMEENDING" path="res/music/WogThemeEnding" />
+	</Resources>
+</ResourceManifest>

@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_levelinfotransition_main">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_LEVELINFOTRANSITION_MAIN_LEAFBUNCH" path="res/movie/levelinfotransition_in/leafbunch" />
+		<Image id="IMAGE_MOVIE_LEVELINFOTRANSITION_MAIN_BLACK32" path="res/movie/generic/black32" />
+	</Resources>
+</ResourceManifest>

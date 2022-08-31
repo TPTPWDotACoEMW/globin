@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_credits">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CREDITS_LENSFLARE" path="res/images/lensFlare" />
+		<Image id="IMAGE_MOVIE_CREDITS_WOGLOGO01" path="res/movie/generic/wogLogo01" />
+		<Image id="IMAGE_MOVIE_CREDITS_TREE" path="res/movie/credits/tree" />
+		<Image id="IMAGE_MOVIE_CREDITS_AND" path="res/movie/credits/and" />
+		<Image id="IMAGE_MOVIE_CREDITS_KYLEGABLER" path="res/movie/credits/kylegabler" />
+		<Image id="IMAGE_MOVIE_CREDITS_GEAR" path="res/movie/credits/gear" />
+		<Image id="IMAGE_MOVIE_CREDITS_RONCARMEL" path="res/movie/credits/roncarmel" />
+		<Image id="IMAGE_MOVIE_CREDITS_ALLANBLOMQUIST" path="res/movie/credits/allanblomquist" />
+		<Image id="IMAGE_MOVIE_CREDITS_PCPROG" path="res/movie/credits/pcprog" />
+		<Image id="IMAGE_MOVIE_CREDITS_MOBILEPROG" path="res/movie/credits/mobileprog" />
+		<Image id="IMAGE_MOVIE_CREDITS_2DBOY" path="res/movie/credits/2dboy" />
+		<Image id="IMAGE_MOVIE_CREDITS_GIRL0" path="res/movie/credits/girl0" />
+		<Image id="IMAGE_MOVIE_CREDITS_GIRL1" path="res/movie/credits/girl1" />
+		<Image id="IMAGE_MOVIE_CREDITS_GIRL2" path="res/movie/credits/girl2" />
+		<Image id="IMAGE_MOVIE_CREDITS_GIRL3" path="res/movie/credits/girl3" />
+		<Image id="IMAGE_MOVIE_CREDITS_BLACK32" path="res/movie/generic/black32" />
+		<Sound id="SOUND_MOVIE_CREDITS_LIGHTSON" path="res/movie/generic/lightson" />
+		<Sound id="SOUND_MOVIE_CREDITS_RUN1" path="res/movie/credits/run1" />
+		<Sound id="SOUND_MOVIE_CREDITS_RUN2" path="res/movie/credits/run2" />
+		<Sound id="SOUND_MOVIE_CREDITS_CHEER2" path="res/sounds/cheer2" />
+		<Sound id="SOUND_MOVIE_CREDITS_TEMP_MINIOTTBB" path="res/music/temp_miniottbb" />
+	</Resources>
+</ResourceManifest>

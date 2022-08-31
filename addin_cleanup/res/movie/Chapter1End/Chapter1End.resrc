@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter1End">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER1END_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER1END_CREATURE" path="res/movie/Chapter1End/creature" />
+		<Image id="IMAGE_MOVIE_CHAPTER1END_WORLD" path="res/movie/Chapter1End/world" />
+		<Image id="IMAGE_MOVIE_CHAPTER1END_SKY" path="res/movie/Chapter1End/sky" />
+		<Sound id="SOUND_MOVIE_CHAPTER1END_WOGTHEMELOOP" path="res/music/WogThemeLoop" />
+		<Sound id="SOUND_MOVIE_CHAPTER1END_CHEER2" path="res/sounds/cheer2" />
+	</Resources>
+</ResourceManifest>

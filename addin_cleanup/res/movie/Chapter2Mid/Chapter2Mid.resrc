@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter2Mid">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_LENSFLARE" path="res/images/lensFlare" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_CONTAINER" path="res/movie/Chapter2Mid/container" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_GOOP" path="res/movie/Chapter2Mid/goop" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_FINGER" path="res/movie/Chapter2Mid/finger" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_HANDL" path="res/movie/Chapter2Mid/handl" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_HANDR" path="res/movie/Chapter2Mid/handr" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_GURL" path="res/movie/Chapter2Mid/gurl" />
+		<Image id="IMAGE_MOVIE_CHAPTER2MID_BG" path="res/movie/Chapter2Mid/bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER2MID_C2MIDSFX" path="res/movie/Chapter2Mid/c2midSfx" />
+		<Sound id="SOUND_MOVIE_CHAPTER2MID_CHEER2" path="res/sounds/cheer2" />
+	</Resources>
+</ResourceManifest>

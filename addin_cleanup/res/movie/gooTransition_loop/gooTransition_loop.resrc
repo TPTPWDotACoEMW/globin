@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_gooTransition_loop">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_GOOTRANSITION_LOOP_GOOSPLATBIG" path="res/images/levelimages/gooSplatBig" />
+	</Resources>
+</ResourceManifest>

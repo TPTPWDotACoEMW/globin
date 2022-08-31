@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_eol_7_islandin">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_PIPETRAVELSEG0" path="res/movie/eol_1_in/pipeTravelSeg0" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_STATLABEL_GOAL" path="res/movie/eol_1_in/statlabel_goal" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_STATLABEL_COLLECTED" path="res/movie/eol_1_in/statlabel_collected" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_STATLABEL_EXTRACREDIT" path="res/movie/eol_1_in/statlabel_extracredit" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_STATLABEL_MOVES" path="res/movie/eol_1_in/statlabel_moves" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_STATLABEL_TIME" path="res/movie/eol_1_in/statlabel_time" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_WOOSH" path="res/movie/generic/woosh" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_COLLECTIONTANK_FG" path="res/movie/eol_1_in/collectionTank_fg" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_PIPESEG" path="res/movie/eol_1_in/pipeSeg" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_PIPETRAVELBG" path="res/movie/eol_1_in/pipeTravelBg" />
+		<Image id="IMAGE_MOVIE_EOL_7_ISLANDIN_COLLECTIONTANKHANDLE" path="res/movie/eol_1_in/collectionTankHandle" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_TANKIN" path="res/movie/eol_1_in/tankIn" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_TANKFILL" path="res/movie/eol_1_in/tankFill" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_SWISH" path="res/movie/eol_1_in/swish" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_STATPOP" path="res/movie/eol_1_in/statPop" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_HANDLEUP" path="res/movie/eol_1_in/handleUp" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_CHEER1" path="res/movie/eol_1_in/cheer1" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_TANKEMPTY" path="res/movie/eol_1_in/tankEmpty" />
+		<Sound id="SOUND_MOVIE_EOL_7_ISLANDIN_TRANSWOOSH2" path="res/movie/eol_1_in/transwoosh2" />
+	</Resources>
+</ResourceManifest>

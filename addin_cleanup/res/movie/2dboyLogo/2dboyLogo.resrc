@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_2dboyLogo">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_ARM" path="res/movie/generic/arm" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_THUMB" path="res/movie/generic/thumb" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_MIDDLEFINGER" path="res/movie/generic/middleFinger" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_PINKY" path="res/movie/generic/pinky" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_PRESENTS" path="res/movie/2dboyLogo/presents" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_SMEAR" path="res/movie/2dboyLogo/smear" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_LOGO_Y" path="res/movie/2dboyLogo/logo_Y" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_SPLAT1" path="res/movie/2dboyLogo/splat1" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_LOGO_O" path="res/movie/2dboyLogo/logo_O" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_LOGO_B" path="res/movie/2dboyLogo/logo_B" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_LOGO_D" path="res/movie/2dboyLogo/logo_D" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_LOGO_2" path="res/movie/2dboyLogo/logo_2" />
+		<Image id="IMAGE_MOVIE_2DBOYLOGO_BLACK32" path="res/movie/generic/black32" />
+	</Resources>
+</ResourceManifest>

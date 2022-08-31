@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter4End">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_LF4" path="res/images/levelimages/lf4" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WAVE" path="res/movie/Chapter4End/wave" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGCDISTANT" path="res/movie/Chapter4End/wogcDistant" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S4_WIREFRAME" path="res/movie/generic/s4_wireframe" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_GLOBENOWOGC" path="res/movie/Chapter4End/globeNoWogc" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_GOOGLOB" path="res/images/fx/gooGlob" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_GOODROP1" path="res/images/fx/goodrop1" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S4_MIST" path="res/movie/generic/s4_mist" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S4_BG" path="res/movie/generic/s4_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_BB" path="res/images/levelimages/bb" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGCD_VEGGIES" path="res/movie/Chapter4End/wogcd_veggies" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_SMOKEWAVE" path="res/movie/Chapter4End/smokewave" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGCD_WOGCD" path="res/movie/Chapter4End/wogcd_wogcd" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGCD_DEBRIS" path="res/movie/Chapter4End/wogcd_debris" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S2_BG" path="res/movie/generic/s2_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S2_SIGN" path="res/movie/generic/s2_sign" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGC_WOGCE" path="res/movie/Chapter4End/wogc_wogce" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGC_WOGC" path="res/movie/Chapter4End/wogc_wogc" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_S3_BEAM" path="res/movie/generic/s3_beam" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_GEARDISTANT" path="res/images/levelimages/gearDistant" />
+		<Image id="IMAGE_MOVIE_CHAPTER4END_WOGC_BG" path="res/movie/Chapter4End/wogc_bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER4END_SFX_P1" path="res/movie/Chapter4End/sfx_p1" />
+		<Sound id="SOUND_MOVIE_CHAPTER4END_SFX_P2" path="res/movie/Chapter4End/sfx_p2" />
+	</Resources>
+</ResourceManifest>

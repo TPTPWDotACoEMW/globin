@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_signpostDlg_flipout">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_SIGNPOSTDLG_FLIPOUT_SIGNPOST_DLG_SIGN" path="res/images/levelimages/SignPost_dlg_sign" />
+		<Image id="IMAGE_MOVIE_SIGNPOSTDLG_FLIPOUT_SIGNPOST_DLG_POLE" path="res/images/levelimages/SignPost_dlg_pole" />
+		<Image id="IMAGE_MOVIE_SIGNPOSTDLG_FLIPOUT_FOGGYEDGES" path="res/images/levelimages/foggyEdges" />
+	</Resources>
+</ResourceManifest>

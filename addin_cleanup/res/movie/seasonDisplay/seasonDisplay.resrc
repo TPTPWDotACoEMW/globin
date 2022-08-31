@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_seasonDisplay">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_SEASONDISPLAY_BLACK32" path="res/movie/generic/black32" />
+	</Resources>
+</ResourceManifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_signpostDlgIsh_flipout">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_SIGNPOSTDLGISH_FLIPOUT_LF4" path="res/images/levelimages/lf4" />
+		<Image id="IMAGE_MOVIE_SIGNPOSTDLGISH_FLIPOUT_SIGNPOSTISH" path="res/movie/generic/signpostIsh" />
+		<Sound id="SOUND_MOVIE_SIGNPOSTDLGISH_FLIPOUT_CONSOLEBEEP1" path="res/movie/generic/consoleBeep1" />
+	</Resources>
+</ResourceManifest>

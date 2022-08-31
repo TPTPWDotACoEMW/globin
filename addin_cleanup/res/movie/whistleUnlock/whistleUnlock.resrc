@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_whistleUnlock">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_ARM" path="res/movie/generic/arm" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_THUMB" path="res/movie/generic/thumb" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_MIDDLEFINGER" path="res/movie/generic/middleFinger" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_PINKY" path="res/movie/generic/pinky" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_WHISTLE" path="res/movie/whistleUnlock/whistle" />
+		<Image id="IMAGE_MOVIE_WHISTLEUNLOCK_BLACK32" path="res/movie/generic/black32" />
+	</Resources>
+</ResourceManifest>

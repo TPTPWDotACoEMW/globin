@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_wogcunlock">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GIRL3" path="res/movie/generic/girl3" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GIRL2" path="res/movie/generic/girl2" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GIRL1" path="res/movie/generic/girl1" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GIRL0" path="res/movie/generic/girl0" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_LENSFLARE" path="res/images/lensFlare" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_BBUNLOCKED" path="res/movie/wogcunlock/bbUnlocked" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_S2BG" path="res/movie/generic/s2bg" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_BEAUTY2" path="res/movie/wogcunlock/beauty2" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_BEAUTY1" path="res/movie/wogcunlock/beauty1" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_OPENSIGN_ON" path="res/movie/wogcunlock/opensign_on" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_OPENSIGN_OFF" path="res/movie/wogcunlock/opensign_off" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GEARDISTANT" path="res/images/levelimages/gearDistant" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_TITLE_WORLD" path="res/movie/wogcunlock/title_WORLD" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_TITLE_OF" path="res/movie/wogcunlock/title_OF" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_TITLE_GOO" path="res/movie/wogcunlock/title_GOO" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_TITLE_CORPORATION" path="res/movie/wogcunlock/title_CORPORATION" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_WOGC" path="res/movie/wogcunlock/wogc" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_CITY" path="res/movie/wogcunlock/city" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_GLOW" path="res/movie/wogcunlock/glow" />
+		<Image id="IMAGE_MOVIE_WOGCUNLOCK_BURST" path="res/images/levelimages/burst" />
+		<Sound id="SOUND_MOVIE_WOGCUNLOCK_WOGCUNLOCKS" path="res/sounds/WoGCUnlocks" />
+	</Resources>
+</ResourceManifest>

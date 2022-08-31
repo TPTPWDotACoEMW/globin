@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_youGotMail">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_YOUGOTMAIL_BLACK32" path="res/movie/generic/black32" />
+	</Resources>
+</ResourceManifest>

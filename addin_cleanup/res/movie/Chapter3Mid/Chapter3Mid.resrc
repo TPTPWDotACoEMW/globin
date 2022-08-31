@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter3Mid">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_GIRL2" path="res/movie/generic/girl2" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_GIRL3" path="res/movie/generic/girl3" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_GIRL1" path="res/movie/generic/girl1" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_BB1" path="res/movie/Chapter3Mid/bb1" />
+		<Image id="IMAGE_MOVIE_CHAPTER3MID_S2BG" path="res/movie/generic/s2bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER3MID_LOOP_STRONGWIND" path="res/sounds/loop_strongwind" />
+		<Sound id="SOUND_MOVIE_CHAPTER3MID_RUN" path="res/movie/Chapter3Mid/run" />
+		<Sound id="SOUND_MOVIE_CHAPTER3MID_DLG_1" path="res/movie/Chapter3Mid/dlg_1" />
+		<Sound id="SOUND_MOVIE_CHAPTER3MID_DLG_2" path="res/movie/Chapter3Mid/dlg_2" />
+	</Resources>
+</ResourceManifest>

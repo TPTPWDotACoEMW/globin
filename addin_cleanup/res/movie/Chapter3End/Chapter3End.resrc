@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter3End">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_LF4" path="res/images/levelimages/lf4" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_CUBE" path="res/movie/generic/s4_cube" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_SQUAREBIG" path="res/movie/generic/s4_squareBig" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_SQUARESMALL" path="res/movie/Chapter3End/s4_squareSmall" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_WIREFRAME" path="res/movie/generic/s4_wireframe" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_GLOBE" path="res/movie/generic/s4_globe" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S1_BEAM" path="res/movie/generic/s1_beam" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_MIST" path="res/movie/generic/s4_mist" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S3_VEGGIESL" path="res/movie/Chapter3End/s3_veggiesL" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S3_VEGGIESR" path="res/movie/Chapter3End/s3_veggiesR" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S3_BEAM" path="res/movie/generic/s3_beam" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_BG" path="res/movie/generic/s2_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G2C" path="res/movie/Chapter3End/s2_g2c" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G2A" path="res/movie/Chapter3End/s2_g2a" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G3C" path="res/movie/Chapter3End/s2_g3c" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G3A" path="res/movie/Chapter3End/s2_g3a" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G1C" path="res/movie/Chapter3End/s2_g1c" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G1A" path="res/movie/Chapter3End/s2_g1a" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G0C" path="res/movie/Chapter3End/s2_g0c" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_G0B" path="res/movie/Chapter3End/s2_g0b" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S4_BG" path="res/movie/generic/s4_bg" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_CROWD" path="res/movie/Chapter3End/s2_crowd" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_HILL" path="res/movie/Chapter3End/s2_hill" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_CURSOR" path="res/movie/generic/s2_cursor" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_SIGN" path="res/movie/generic/s2_sign" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S2_VEGGIES" path="res/movie/generic/s2_veggies" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S1_GUN" path="res/movie/Chapter3End/s1_gun" />
+		<Image id="IMAGE_MOVIE_CHAPTER3END_S1_BG" path="res/movie/Chapter3End/s1_bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_PART1BG" path="res/movie/Chapter3End/part1bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_WOGTHEMELOOP" path="res/music/WogThemeLoop" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_CHEER2" path="res/sounds/cheer2" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_DL_WHATISIT" path="res/movie/Chapter3End/dl_whatisit" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_DL_ITSFALLING" path="res/movie/Chapter3End/dl_itsfalling" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_CONSOLEBEEP1" path="res/movie/generic/consoleBeep1" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_NUKE" path="res/sounds/nuke" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_CONVERTWORLD" path="res/movie/generic/convertWorld" />
+		<Sound id="SOUND_MOVIE_CHAPTER3END_LIGHTSON" path="res/movie/generic/lightson" />
+	</Resources>
+</ResourceManifest>

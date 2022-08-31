@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<ResourceManifest>
+	<Resources id="movie_Chapter2End">
+		<SetDefaults path="./" idprefix="" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_BLACK32" path="res/movie/generic/black32" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_FADER" path="res/movie/generic/fader" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_LF" path="res/movie/Chapter2End/lf" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_EYEL" path="res/movie/Chapter2End/eyeL" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_EYER" path="res/movie/Chapter2End/eyeR" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_HEAD" path="res/movie/Chapter2End/head" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_HAIRSEG" path="res/movie/Chapter2End/hairSeg" />
+		<Image id="IMAGE_MOVIE_CHAPTER2END_BG" path="res/movie/Chapter2End/bg" />
+		<Sound id="SOUND_MOVIE_CHAPTER2END_BOT_EXCERPT1" path="res/music/bot_excerpt1" />
+		<Sound id="SOUND_MOVIE_CHAPTER2END_LIGHTSON" path="res/movie/generic/lightson" />
+		<Sound id="SOUND_MOVIE_CHAPTER2END_CHEER2" path="res/sounds/cheer2" />
+	</Resources>
+</ResourceManifest>
