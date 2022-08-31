@@ -1,0 +1,19 @@
+Latest version: v0.9
+
+Version history:
+
+v0.9: Beta release. Finished up the most important features and some quality-of-life updates.
+- Globin now properly merges files in an addin's "merge" directory.
+- Globin is better at snipping off excess ".xml" file extensions.
+- Globin is better at tacking on required ".xml" file extensions.
+- To prevent crashes, Globin no longer allows overrides of resource files in the "movie" folder.
+- Added some images to the "addin_tools" folder that were removed or modified in the latest version.
+
+v0.8.37: Squashed a couple of persistent bugs.
+- Globin now corrects "balls" and "resources" to "balls.xml" and "resources.xml" if an addin
+  implements a custom ball
+- Globin will no longer halt if the addin does not have an "addin.xml" or "text.xml"
+- Globin still does not work with "merge" folders; this will be implemented in the next release
+- Globin will no longer attempt to copy addins to "World of Goo\n" instead of "World of Goo".
+
+v0.8: Alpha release. Not currently available to general public.

@@ -1,0 +1,3 @@
+- Generally improve functionality
+- Make an interface that's easy to work with
+- Figure out why Experimental Level Project continues crashing

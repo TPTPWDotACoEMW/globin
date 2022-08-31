@@ -1,0 +1,95 @@
+<island name="The Goo Filled Hills" map="island1" icon="IMAGE_GLOBAL_ISLAND_1_ICON">
+
+
+	<!-- starting levels -->
+	
+	<level id="GoingUp"
+		name="LEVEL_NAME_GOINGUP" 
+		text="LEVEL_TEXT_GOINGUP" 
+		ocd="balls,11"
+		/>
+
+	<level id="EconomicDivide" depends="GoingUp" 
+		name="LEVEL_NAME_ECONOMICDIVIDE" 
+		text="LEVEL_TEXT_ECONOMICDIVIDE" 
+		ocd="balls,16"
+		/>
+
+	<level id="HangLow" depends="EconomicDivide" 
+		name="LEVEL_NAME_HANGLOW" 
+		text="LEVEL_TEXT_HANGLOW"
+		ocd="balls,22"
+		oncomplete="unlockwogcorp" 
+		cutscene="x,wogcunlock,gooTransition_out"
+		/>
+
+	<level id="FlyingMachine" depends="HangLow"
+		name="LEVEL_NAME_FLYINGMACHINE" 
+		text="LEVEL_TEXT_FLYINGMACHINE"
+		ocd="time,16"
+		/>
+
+
+
+	<!-- upper branch -->
+	
+	<level id="FistyReachesOut" depends="FlyingMachine"
+		name="LEVEL_NAME_FISTYREACHESOUT" 
+		text="LEVEL_TEXT_FISTYREACHESOUT"
+		ocd="moves,14"
+		/>
+
+	<level id="ImpaleSticky" depends="FistyReachesOut" 
+		name="LEVEL_NAME_IMPALESTICKY" 
+		text="LEVEL_TEXT_IMPALESTICKY"
+		ocd="balls,42"
+		/>
+
+	<level id="TowerOfGoo" depends="ImpaleSticky"
+		name="LEVEL_NAME_TOWEROFGOO" 
+		text="LEVEL_TEXT_TOWEROFGOO"
+		ocd="balls,68"
+		/>
+
+
+
+	<!-- lower branch --> 
+	
+	<level id="Tumbler" depends="FlyingMachine"
+		name="LEVEL_NAME_TUMBLER" 
+		text="LEVEL_TEXT_TUMBLER"
+		ocd="balls,35"
+		/>
+
+	<level id="IvyTower" depends="Tumbler"
+		name="LEVEL_NAME_IVYTOWERS" 
+		text="LEVEL_TEXT_IVYTOWERS"
+		ocd="balls,16"
+		/>
+
+	<level id="Chain" depends="IvyTower"
+		name="LEVEL_NAME_CHAIN" 
+		text="LEVEL_TEXT_CHAIN"
+		ocd="balls,25"
+		/>
+
+
+
+
+	<!-- ending levels --> 
+	
+	<level id="OdeToBridgeBuilder" depends="TowerOfGoo,Chain"
+		name="LEVEL_NAME_ODETOBRIDGEBUILDER" 
+		text="LEVEL_TEXT_ODETOBRIDGEBUILDER"
+		ocd="balls,38"
+		/>
+
+	<level id="RegurgitationPumpingStation" depends="OdeToBridgeBuilder"
+		name="LEVEL_NAME_REGURGITATIONPUMPINGSTATION" 
+		text="LEVEL_TEXT_REGURGITATIONPUMPINGSTATION" 
+		cutscene="levelFadeOut,Chapter1End,gooTransition_out" 
+		 ocd="moves,42"
+		/>
+
+
+</island>

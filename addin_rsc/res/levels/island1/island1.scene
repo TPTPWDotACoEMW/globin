@@ -1,0 +1,86 @@
+<scene minx="-800" miny="100" maxx="800" maxy="950" backgroundcolor="0,0,0" >
+
+	<!-- ForceFields -->
+	<linearforcefield id="gooWaterRight" type="gravity" center="-307.5554,168.1748" width="229.4888" height="85.4941" force="0,20" dampeningfactor="0" antigrav="true" geomonly="false" enabled="true" water="true" color="255,0,0,0" depth="0" />
+	<linearforcefield id="gooWaterRight" type="gravity" center="380.1611,269.4199" width="287.9844" height="113.9941" force="0,20" dampeningfactor="0" antigrav="true" geomonly="false" enabled="true" water="true" color="255,0,0,0" depth="0" />
+	<linearforcefield type="gravity" force="0,-10" dampeningfactor="0" antigrav="true" geomonly="false" />
+
+	<!-- Particles -->
+	<particles effect="fireStackSmaller1" depth="-8" pos="32.60791015625,17.57470703125" pretick="0" />
+	<particles effect="gooDrips" depth="-0.8" pos="385.65966796875,786.39453125" pretick="500" />
+	<particles effect="worldMap_FactorySmoke" depth="0.8" pos="519.1533203125,880.67529296875" pretick="0" />
+	<particles effect="blackBallsRising" depth="100" pos="117.66845703125,1154.36450195313" pretick="0" />
+
+	<!-- SceneLayers -->
+		<SceneLayer id="ocd_GoingUp" name="OCD_flag1" depth="7.2" x="-524.37" y="310.56" scalex="0.794" scaley="0.794" rotation="17.59" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_EconomicDivide" name="OCD_flag1" depth="7.2" x="-397.7" y="310.07" scalex="0.677" scaley="0.677" rotation="-10.48" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_HangLow" name="OCD_flag1" depth="7.2" x="-127.55" y="336.98" scalex="0.657" scaley="0.657" rotation="-29.79" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_FlyingMachine" name="OCD_flag1" depth="7.2" x="-241.94" y="472.74" scalex="0.774" scaley="0.774" rotation="29.14" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_Tumbler" name="OCD_flag1" depth="7.2" x="-52.65" y="473.67" scalex="0.787" scaley="0.787" rotation="15.57" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_IvyTower" name="OCD_flag1" depth="7.2" x="89.44" y="486.57" scalex="0.963" scaley="0.963" rotation="-2.82" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_Chain" name="OCD_flag1" depth="7.2" x="187.3" y="524.26" scalex="0.708" scaley="0.708" rotation="11.05" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_FistyReachesOut" name="OCD_flag1" depth="7.2" x="-148.94" y="594.49" scalex="0.732" scaley="0.732" rotation="41.24" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_ImpaleSticky" name="OCD_flag1" depth="7.2" x="-90.24" y="698.61" scalex="0.908" scaley="0.908" rotation="39.33" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_TowerOfGoo" name="OCD_flag1" depth="7.2" x="55.74" y="737.97" scalex="0.967" scaley="0.967" rotation="-7.71" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_OdeToBridgeBuilder" name="OCD_flag1" depth="7.2" x="339" y="620.01" scalex="0.987" scaley="0.987" rotation="-1.5" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="ocd_RegurgitationPumpingStation" name="OCD_flag1" depth="7.2" x="515.43" y="708.47" scalex="0.828" scaley="0.828" rotation="-2.57" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_OCD_FLAG1" anim="ocdFlagWave" animspeed="1"   />
+		<SceneLayer id="levelpipe_OdeToBridgeBuilder" name="pipecon11" depth="0.8" x="191.83" y="593.83" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON11"   />
+		<SceneLayer id="levelpipe_FlyingMachine" name="pipecon3" depth="0.8" x="-192.84" y="383.67" scalex="1" scaley="1" rotation="-5.57" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON3"   />
+		<SceneLayer id="levelpipe_Tumbler" name="pipecon5" depth="0.8" x="-141" y="497.33" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON5"   />
+		<SceneLayer id="levelpipe_EconomicDivide" name="pipecon1" depth="0.8" x="-457" y="271.5" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON1"   />
+		<SceneLayer id="levelpipe_HangLow" name="pipecon2" depth="0.8" x="-344.67" y="287.17" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON2"   />
+		<SceneLayer id="levelpipe_IvyTower" name="pipecon6" depth="0.8" x="14.5" y="435" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON6"   />
+		<SceneLayer id="levelpipe_Chain" name="pipecon7" depth="0.8" x="143.33" y="464.83" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON7"   />
+		<SceneLayer id="levelpipe_ImpaleSticky" name="pipecon9" depth="0.8" x="-106.17" y="618.17" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON9"   />
+		<SceneLayer id="levelpipe_TowerOfGoo" name="pipecon10" depth="0.8" x="-17.5" y="685" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON10"   />
+		<SceneLayer id="levelpipe_RegurgitationPumpingStation" name="pipecon12" depth="0.8" x="417.83" y="616.33" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_PIPECON12"   />
+	<SceneLayer name="bush_fg1a" depth="200" x="391.36" y="183.53" scalex="1.328" scaley="1.467" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="200" x="550.02" y="167.12" scalex="1.432" scaley="1.432" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="200" x="-238.94" y="159.62" scalex="1.432" scaley="1.432" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="730.5" y="137" scalex="1.62" scaley="1.62" rotation="40.28" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="88" x="-706.13" y="985.55" scalex="1.524" scaley="1.858" rotation="-79.02" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="-732.76" y="862.25" scalex="1.524" scaley="1.858" rotation="-102.12" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="-720" y="127.28" scalex="1.524" scaley="1.858" rotation="-71.65" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="-42.07" y="130.05" scalex="1.299" scaley="1.299" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="-549.05" y="96.74" scalex="1.299" scaley="1.299" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="bush_fg1a" depth="80" x="130.42" y="145.05" scalex="1.299" scaley="1.299" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BUSH_FG1A"   />
+	<SceneLayer name="tree_stripe1" depth="64" x="-757.08" y="401.92" scalex="0.861" scaley="1.888" rotation="-2.25" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_TREE_STRIPE1"   />
+	<SceneLayer name="tree_stripe1" depth="64" x="-776.36" y="434.65" scalex="1.159" scaley="1.888" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_TREE_STRIPE1"   />
+	<SceneLayer name="main" depth="0" x="1.16" y="489.95" scalex="1.137" scaley="1" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_MAIN"   />
+	<SceneLayer name="gear1blur" depth="-0.8" x="216.12" y="162.96" scalex="0.898" scaley="0.898" rotation="0" alpha="1" colorize="0,0,0" image="IMAGE_SCENE_ISLAND1_GEAR1BLUR" anim="rot_1rps" animspeed="-0.4"   />
+	<SceneLayer name="gear1blur" depth="-0.8" x="-114" y="336.09" scalex="0.423" scaley="0.423" rotation="0" alpha="1" colorize="0,0,0" image="IMAGE_SCENE_ISLAND1_GEAR1BLUR" anim="rot_1rps" animspeed="0.6"   />
+	<SceneLayer name="gear1blur" depth="-40" x="102.17" y="630.73" scalex="0.667" scaley="0.667" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_GEAR1BLUR" anim="rot_1rps" animspeed="1"   />
+	<SceneLayer name="gear1" depth="-40.8" x="-485.2" y="233.33" scalex="0.599" scaley="0.599" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_GEAR1" anim="rot_1rps" animspeed="-0.4"   />
+	<SceneLayer name="gear1" depth="-40.8" x="-11.87" y="640.95" scalex="0.882" scaley="0.882" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_GEAR1" anim="rot_1rps" animspeed="-0.3"   />
+	<SceneLayer name="title" depth="-80" x="-212.09" y="656.78" scalex="1.193" scaley="1.16" rotation="24.54" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_TITLE"   />
+	<SceneLayer name="fireRafter" depth="-80" x="37.75" y="200.55" scalex="1.657" scaley="1.23" rotation="7.4" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_FIRERAFTER"   />
+	<SceneLayer name="fireRafter" depth="-112" x="36.75" y="277.79" scalex="1.554" scaley="1.23" rotation="-8.35" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_FIRERAFTER"   />
+	<SceneLayer name="fireBg" depth="-128" x="36.7" y="272.91" scalex="1.355" scaley="1.426" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_FIREBG"   />
+	<SceneLayer name="bgVeggies" depth="-160" x="12.69" y="159.64" scalex="2.394" scaley="0.936" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BGVEGGIES"   />
+	<SceneLayer name="bg" depth="-480" x="0" y="569.84" scalex="3.223" scaley="1.836" rotation="0" alpha="1" colorize="255,255,255" image="IMAGE_SCENE_ISLAND1_BG"   />
+
+	<!-- Buttons -->
+
+	<buttongroup id="levelMarkerGroup" osx="150,1.08" >
+		<button id="lb_GoingUp" depth="8" x="-520" y="278" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_GoingUp" onmouseenter="ss_GoingUp" onmouseexit="hs_GoingUp" />
+		<button id="lb_EconomicDivide" depth="8" x="-404" y="282.67" scalex="1" scaley="1" rotation="6.17" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_EconomicDivide" onmouseenter="ss_EconomicDivide" onmouseexit="hs_EconomicDivide" />
+		<button id="lb_HangLow" depth="8" x="-155.33" y="313.67" scalex="1" scaley="1" rotation="0" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERB_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERB_OVER" onclick="pl_HangLow" onmouseenter="ss_HangLow" onmouseexit="hs_HangLow" />
+		<button id="lb_FlyingMachine" depth="8" x="-230.33" y="438.28" scalex="1.035" scaley="1.035" rotation="1.56" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_FlyingMachine" onmouseenter="ss_FlyingMachine" onmouseexit="hs_FlyingMachine" />
+		<button id="lb_FistyReachesOut" depth="8" x="-132.5" y="562.5" scalex="1" scaley="1" rotation="77.34" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERC_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERC_OVER" onclick="pl_FistyReachesOut" onmouseenter="ss_FistyReachesOut" onmouseexit="hs_FistyReachesOut" />
+		<button id="lb_ImpaleSticky" depth="8" x="-69.5" y="662.5" scalex="1" scaley="1" rotation="46.35" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERC_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERC_OVER" onclick="pl_ImpaleSticky" onmouseenter="ss_ImpaleSticky" onmouseexit="hs_ImpaleSticky" />
+		<button id="lb_TowerOfGoo" depth="8" x="40.5" y="698.04" scalex="1" scaley="1.061" rotation="0" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERC_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERC_OVER" onclick="pl_TowerOfGoo" onmouseenter="ss_TowerOfGoo" onmouseexit="hs_TowerOfGoo" />
+		<button id="lb_Tumbler" depth="8" x="-51.98" y="437.1" scalex="1.008" scaley="1.008" rotation="-0.5" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_Tumbler" onmouseenter="ss_Tumbler" onmouseexit="hs_Tumbler" />
+		<button id="lb_IvyTower" depth="8" x="81.64" y="444.3" scalex="1.16" scaley="1.16" rotation="1.85" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_IvyTower" onmouseenter="ss_IvyTower" onmouseexit="hs_IvyTower" />
+		<button id="lb_Chain" depth="8" x="186.98" y="490.89" scalex="0.914" scaley="0.914" rotation="1.85" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_Chain" onmouseenter="ss_Chain" onmouseexit="hs_Chain" />
+		<button id="lb_OdeToBridgeBuilder" depth="8" x="328.29" y="578.59" scalex="1.018" scaley="1.018" rotation="-5.73" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_OdeToBridgeBuilder" onmouseenter="ss_OdeToBridgeBuilder" onmouseexit="hs_OdeToBridgeBuilder" />
+		<button id="lb_RegurgitationPumpingStation" depth="8" x="504.06" y="672.12" scalex="1.008" scaley="0.848" rotation="-0.5" alpha="1" colorize="255,255,255"   up="IMAGE_SCENE_ISLAND1_LEVELMARKERA_UP" over="IMAGE_SCENE_ISLAND1_LEVELMARKERA_OVER" onclick="pl_RegurgitationPumpingStation" onmouseenter="ss_RegurgitationPumpingStation" onmouseexit="hs_RegurgitationPumpingStation" />
+	</buttongroup>
+
+	<!-- Labels -->
+
+	<!-- Static Geometry -->
+
+	<!-- Dynamic Geometry -->
+
+	<!-- Geometry Constraints -->
+</scene>
