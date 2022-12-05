@@ -118,9 +118,6 @@ def main() :
             addin_info.close()
             text_info.close()
 
-            # Step 6: Merge contents of the merge folder. If the merge folder does not exist, skip this step.
-            # The code for this step is not yet implemented.
-
             print("Addin installed successfully.\n")
 
         print("Placing level buttons...")
