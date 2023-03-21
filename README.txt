@@ -83,12 +83,7 @@ modifying these folders' contents.
     send a bug report so we can list it here. For now, Globin does not fix this issue. It is unknown
     if it will eventually do so.
 
-    On certain platorms, lxml is unable to parse certain characters. If you encounter this problem
-    while Globin is parsing "text.xml," there is a version of this file with all foreign languages
-    removed in the "extra_tools" folder. Simply move this file from "extra_tools" to
-    "addin_rsc/properties" and Globin will read it instead.
-
-    Addins that override images will usually not show overridden images if 2x resolution is enabled.
+    Addins that override images will not show most overridden images if 2x resolution is enabled.
     As such, Globin disables 2x graphics by default. It can be re-enabled by modifying
     "properties/config.template.ini" in the "addin_rsc" folder.
     
