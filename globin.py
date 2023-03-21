@@ -53,14 +53,14 @@ def main() :
             
             print("Parsing level information...")
             addin_info_path = os.path.join(addin_path, "addin.xml")
-            addin_info = open(addin_info_path, "r")
+            addin_info = open(addin_info_path, "r", errors="ignore")
             addin_parser = BeautifulSoup(addin_info, "xml")
             text_info_path = os.path.join(addin_path, "text.xml")
             if os.path.isfile(text_info_path) :
-                text_info = open(text_info_path, "r")
+                text_info = open(text_info_path, "r", errors="ignore")
                 text_parser = BeautifulSoup(text_info, "xml")
             else :
-                text_info = open(text_info_path, "x")
+                text_info = open(text_info_path, "x", errors="ignore")
                 text_parser = BeautifulSoup("", "xml")
             
 
@@ -117,6 +117,9 @@ def main() :
             island_file.close()
             addin_info.close()
             text_info.close()
+
+            # Step 6: Merge contents of the merge folder. If the merge folder does not exist, skip this step.
+            # The code for this step is not yet implemented.
 
             print("Addin installed successfully.\n")
 
