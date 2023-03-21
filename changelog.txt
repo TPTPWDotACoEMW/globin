@@ -1,6 +1,9 @@
-Latest version: v0.9
+Latest version: v0.9.1
 
 Version history:
+
+v0.9.1
+- Globin no longer throws unnecessary errors when run from the Windows command console.
 
 v0.9: Beta release. Finished up the most important features and some quality-of-life updates.
 - Globin now properly merges files in an addin's "merge" directory.
