@@ -1,3 +1,18 @@
+- Open prompt to ask user where World of Goo is stored, if the "directory" file hasn't been filled in yet.
+- Make copy of World of Goo in the Globin folder.
+- Automatically run World of Goo from the Globin folder when the Globin command is run.
+    - Make it an argument? Perhaps multiple arguments
+        - "globin build" builds the files
+        - "globin run" builds and runs
+        - "globin run-no-build" runs without building?
+        - "globin" and "globin-help" open the command menu?
+        - perhaps "globin" defaults to "run"
+
+- Give Globin an interface using PyQt. (Shouldn't be too hard with QtDesigner.)
+- Create option to enable and disable mods freely, like in GooTool.
+
 - Generally improve functionality
-- Make an interface that's easy to work with
 - Figure out why Experimental Level Project continues crashing
+
+- LONG TERM: Figure out how to make custom .binuni files
+- LONG TERM: Convert .binltl to .binuni?
