@@ -3,17 +3,43 @@ from lxml import etree
 from math import floor
 import os
 import shutil
+import sys
 
 def main() :
+    user_action         = ""
+    user_action_choices = ["build", "help"]
+
+    if len(sys.argv) <= 1:
+        user_action = "build"
+    else:
+        user_action = sys.argv[1]
+
+    #Display the correct usage on unknown options
+    if user_action not in user_action_choices:
+        user_action = "help"
+
+    if user_action == "build":
+        print("Checking wog_directory.txt...\n")
+        read_directory = open("wog_directory.txt", "r")
+        wog_dir = read_directory.readline().strip()
+        read_directory.close()
+        print(f"World of Goo directory set to {wog_dir}.")
+
+        build_addins(wog_dir)
+
+    if user_action == "help":
+        display_help()
+    
+def display_help():
     print("--- Globin ver. 0.9 ---")
     print("A tool for installing mods for World of Goo 1.5\n")
 
+    print("Usage:")
+    print("python globin.py build: Installs the addins to the World Of Goo directory")
+    print("python globin.py help:  Displays this message")
+
+def build_addins(wog_dir):
     print("Starting...")
-    print("Checking wog_directory.txt...\n")
-    read_directory = open("wog_directory.txt", "r")
-    wog_dir = read_directory.readline().strip()
-    read_directory.close()
-    print(f"World of Goo directory set to {wog_dir}.")
     print("Verifying game files...")
     verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
     if os.path.isfile(verifier) :
