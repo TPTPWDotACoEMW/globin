@@ -2,18 +2,46 @@ from bs4 import BeautifulSoup
 from lxml import etree
 from math import floor
 import os
+import platform
 import shutil
+import sys
+import subprocess
 
 def main() :
+    user_action         = ""
+    user_action_choices = ["build", "run", "help"]
+
+    if len(sys.argv) <= 1:
+        user_action = "run"
+    else:
+        user_action = sys.argv[1]
+
+    #Display the correct usage on unknown options
+    if user_action not in user_action_choices:
+        user_action = "help"
+
+    if user_action == "build" or user_action == "run":
+        print("Checking wog_directory.txt...\n")
+        wog_dir = read_directory_from_file("wog_directory.txt")
+        print(f"World of Goo directory set to {wog_dir}.")
+
+        if build_addins(wog_dir) and user_action == "run":
+            launch_world_of_goo(wog_dir)
+
+    if user_action == "help":
+        display_help()
+
+def display_help():
     print("--- Globin ver. 0.9 ---")
     print("A tool for installing mods for World of Goo 1.5\n")
 
+    print("Usage:")
+    print("python globin.py build: Installs the addins to the World Of Goo directory")
+    print("python globin.py run:   Installs the addins and launches World Of Goo")
+    print("python globin.py help:  Displays this message")
+
+def build_addins(wog_dir):
     print("Starting...")
-    print("Checking wog_directory.txt...\n")
-    read_directory = open("wog_directory.txt", "r")
-    wog_dir = read_directory.readline().strip()
-    read_directory.close()
-    print(f"World of Goo directory set to {wog_dir}.")
     print("Verifying game files...")
     verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
     if os.path.isfile(verifier) :
@@ -147,12 +175,81 @@ def main() :
         print("Cleaning up...")
         mergedir(os.getcwd(), "addin_cleanup", game_folder)
 
-        print("All addins installed. Thank you for using Globin.")
+        print("All addins installed. Thank you for using Globin.\n")
+
+        return True
     
     else :
         print("ERROR: Files were not verified successfully. You may be using an old version of World of Goo,")
         print("or a demo version. Globin will not work with these versions. If you are using the latest version,")
         print("make sure you've specified the directory correctly.\n\nGlobin will now exit.")
+
+        return False
+
+def launch_world_of_goo(wog_dir):
+    if platform.system() == "Windows":
+        launch_world_of_goo_windows(wog_dir)
+    
+    if platform.system() == "Linux":
+        launch_world_of_goo_linux(wog_dir)
+
+    if platform.system() == "Darwin":
+        launch_world_of_goo_macos(wog_dir)
+
+def launch_world_of_goo_windows(wog_dir):
+    is_steam_version = os.path.isfile(os.path.join(wog_dir, "steam_api.dll"))
+
+    if is_steam_version:
+        steam_path = read_directory_from_file("steam_directory.txt")
+        steam_executable = os.path.join(steam_path, "Steam.exe")
+
+        if os.path.isfile(steam_executable):
+            subprocess.Popen([steam_executable, "-applaunch", "22000"])
+
+        else:
+            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+            print("but the Steam directory you have specified is not correct.")
+            print("Please provide the correct directory in steam_directory.txt.")
+            
+    else:
+        #Apparently Epic Games version can also be launched directly from game .exe, starting the launcher if needed
+        game_executable = os.path.join(os.fspath(wog_dir), "WorldOfGoo.exe")
+        subprocess.Popen(game_executable)
+
+def launch_world_of_goo_linux(wog_dir):
+    is_steam_version = os.path.isfile(os.path.join(wog_dir, "lib/libsteam_api.so"))
+
+    if is_steam_version:
+        steam_command = "steam" #Steam on Linux can be launched with a single command
+        subprocess.Popen([steam_command, "-applaunch", "22000"])
+            
+    else:
+        game_executable = os.path.join(os.fspath(wog_dir), "WorldOfGoo.bin.x86_64")
+        subprocess.Popen(game_executable)
+
+def launch_world_of_goo_macos(wog_dir):
+    is_steam_version = os.path.isfile(os.path.join(wog_dir, "../Frameworks/libsteam_api.dylib"))
+
+    if is_steam_version:
+        steam_executable = "/Applications/Steam.app/Contents/MacOS/steam_osx" #Apparently apps on Mac are always installed in /Applications?
+
+        if os.path.isfile(steam_executable):
+            subprocess.Popen([steam_executable, "-applaunch", "22000"])
+
+        else:
+            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+            print("but there was a problem launching Steam.")
+            
+    else:
+        game_executable = os.path.join(os.fspath(wog_dir), "../MacOS/World of Goo")
+        subprocess.Popen(game_executable)
+
+def read_directory_from_file(filename):
+    read_directory = open(filename, "r")
+    directory = read_directory.readline().strip()
+    read_directory.close()
+
+    return directory
 
 def mergedir(home, target, game_folder) :
     content = os.path.join(home, target)

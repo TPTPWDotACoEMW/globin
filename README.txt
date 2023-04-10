@@ -124,6 +124,16 @@ for a beginner's guide, which will explain far better than this section will be 
     the VERY FIRST line, and it will read the ENTIRE line. Once you've written out the path, leave it
     alone.
 
+    ## 2.1.1: (Optional) Setting Your Steam Directory
+
+    Globin is able to launch World of Goo with "run" command line argument. However, the Steam version 
+    of World Of Goo will not start if you try to launch the executable directly. If you have the Steam
+    version of the game and want to launch World of Goo after building the addins, provide the directory
+    of Steam in "steam_directory.txt".
+
+    The rules for specifying the Steam directory are the same as the rules for specifying World of Goo
+    directory.
+
     ## 2.2: Adding Addins
 
     As mentioned in section 1, Globin operates using the organization system of .goomod files. However,
@@ -177,7 +187,13 @@ for a beginner's guide, which will explain far better than this section will be 
     Globin from the command line, navigate to the Globin directory and enter the command
     "python3 globin.py". This will automatically run Globin, installing all addins in the "addins"
     folder and placing a button in Chapter 1 for each installed level (except levels in full
-    chapters). If running Globin gives an error, refer to section 5.
+    chapters). After that, Globin automatically launches World of Goo. If running Globin gives 
+    an error, refer to section 5.
+
+    Globin supports several command-line arguments:
+    - "python3 globin.py run" is the default behavior, described above; 
+    - "python3 globin.py build" installs all addins without launching World Of Goo;
+    - "python3 globin.py help" displays the info message.
 
     Repeatedly using Globin will cause files with text appended to them (generally files in one or
     more "merge" folders) to build up with lots of text referencing the same object or objects.
