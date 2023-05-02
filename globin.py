@@ -6,10 +6,11 @@ import platform
 import shutil
 import sys
 import subprocess
+import zipfile
 
 def main() :
     user_action         = ""
-    user_action_choices = ["build", "run", "help"]
+    user_action_choices = ["build", "run", "add", "help"]
 
     if len(sys.argv) <= 1:
         user_action = "run"
@@ -28,6 +29,12 @@ def main() :
         if build_addins(wog_dir) and user_action == "run":
             launch_world_of_goo(wog_dir)
 
+    if user_action == "add":
+        if len(sys.argv) <= 2 or not os.path.isfile(sys.argv[2]) or not sys.argv[2].endswith(".goomod"):
+            print("Please provide a valid addin file!")
+        else:
+            add_addin(sys.argv[2])
+
     if user_action == "help":
         display_help()
 
@@ -36,9 +43,22 @@ def display_help():
     print("A tool for installing mods for World of Goo 1.5\n")
 
     print("Usage:")
-    print("python globin.py build: Installs the addins to the World Of Goo directory")
-    print("python globin.py run:   Installs the addins and launches World Of Goo")
-    print("python globin.py help:  Displays this message")
+    print("python globin.py build:          Installs the addins to the World Of Goo directory")
+    print("python globin.py run:            Installs the addins and launches World Of Goo")
+    print("python globin.py add <filename>: Adds the addin to the list of installed addins")
+    print("python globin.py help:           Displays this message")
+
+def add_addin(filename):
+    addins_dir = os.path.join(os.getcwd(), "addins")
+    if not os.path.isdir(addins_dir):
+        os.mkdir(addins_dir)
+
+    addin_name = os.path.splitext(os.path.basename(filename))[0]
+    addin_dir = os.path.join(addins_dir, addin_name)
+    os.mkdir(addin_dir)
+
+    with zipfile.ZipFile(filename, 'r') as addin_archive:
+        addin_archive.extractall(addin_dir)
 
 def build_addins(wog_dir):
     print("Starting...")
