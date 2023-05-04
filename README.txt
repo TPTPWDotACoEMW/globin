@@ -137,25 +137,40 @@ for a beginner's guide, which will explain far better than this section will be 
     ## 2.2: Adding Addins
 
     As mentioned in section 1, Globin operates using the organization system of .goomod files. However,
-    Globin is unable to read these files while they are compressed. To make them readable, they need to
-    be extracted to the "addins" folder. Most file extraction software will do this properly, but if
-    you want to check, make sure that the addin's "addin.xml" is two folders down. For example, if your
-    addin is named "addin_name", make sure that "Globin/addins/addin_name/addin.xml" is a valid filepath.
-    If the addin data (including "addin.xml") is a layer too shallow or a layer too deep, Globin will not
-    be able to install it properly.
+    Globin is unable to read these files while they are compressed. To make them readable to Globin, 
+    they need to be extracted to the "addins" folder. There are two ways to do it: automatic and manual.
 
     As a brief footnote, not all addins you install will be compatible with each other, and sometimes
     you may wish to remove some addins. In cases where you wish to table an incompatible addin or one
     you just don't want anymore, you can move that addin to the "not-in-use" folder. This folder is not
     read by Globin, it is simply there for ease of moving addins to and from the "addins" folder.
+    
+    ## 2.2.1: Unpacking .goomod files automatically
+    
+    To automatically extract the contents of a .goomod file into the Globin folder, run the Globin 
+    with "add" command line option. For example, to extract "C:\Users\Me\Documents\addin.goomod",
+    execute the following command:
+    - python3 globin.py add "C:\Users\Me\Documents\addin.goomod" 
 
-    ## 2.3: How To Unzip A .goomod File
-
+    ## 2.2.2: Unpacking .goomod Files Manually
+    
     Extracting the contents of a .goomod file is required for Globin to read them. This is a fairly
     simple step, but caution must be taken to not skip it. To extract the contents of a .goomod file,
     first use the rename function to change the file's extension from .goomod to .zip. Some OSes will
     warn you that this can make the file unstable; proceed anwyays. Once the file's extension is
     changed, the .zip file can be opened as normal and extracted to the "addins" folder.
+
+    Most file extraction software will do this properly, but if you want to check, make sure that the 
+    addin's "addin.xml" is two folders down. For example, if your addin is named "addin_name", make sure 
+    that "Globin/addins/addin_name/addin.xml" is a valid filepath. If the addin data (including "addin.xml") 
+    is a layer too shallow or a layer too deep, Globin will not be able to install it properly.
+
+    ## 2.3: Incompatible Addins
+
+    Not all addins you install will be compatible with each other, and sometimes you may wish to remove 
+    some addins. In cases where you wish to table an incompatible addin or one you just don't want anymore, 
+    you can move that addin to the "not-in-use" folder. This folder is not read by Globin, it is simply
+    there for ease of moving addins to and from the "addins" folder.
 
     ## 2.4: Dependencies
 
@@ -191,6 +206,7 @@ for a beginner's guide, which will explain far better than this section will be 
     an error, refer to section 5.
 
     Globin supports several command-line arguments:
+    - "python3 globin.py add <filename>" adds a new addin to the "addins" folder;
     - "python3 globin.py run" is the default behavior, described above; 
     - "python3 globin.py build" installs all addins without launching World Of Goo;
     - "python3 globin.py help" displays the info message.
