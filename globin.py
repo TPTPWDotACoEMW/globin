@@ -10,7 +10,7 @@ import zipfile
 
 def main() :
     user_action         = ""
-    user_action_choices = ["build", "run", "add", "help"]
+    user_action_choices = ["build", "run", "add", "list", "help"]
 
     if len(sys.argv) <= 1:
         user_action = "run"
@@ -35,6 +35,9 @@ def main() :
         else:
             add_addin(sys.argv[2])
 
+    if user_action == "list":
+        display_addin_list()
+
     if user_action == "help":
         display_help()
 
@@ -45,8 +48,62 @@ def display_help():
     print("Usage:")
     print("python globin.py build:          Installs the addins to the World Of Goo directory")
     print("python globin.py run:            Installs the addins and launches World Of Goo")
+    print("python globin.py list:           Displays the list of installed addins")
     print("python globin.py add <filename>: Adds the addin to the list of installed addins")
     print("python globin.py help:           Displays this message")
+
+def display_addin_list():
+    addins_dir     = os.path.join(os.getcwd(), "addins")
+    not_in_use_dir = os.path.join(os.getcwd(), "not-in-use") 
+    
+    addin_names            = gather_addin_names(addins_dir)
+    not_in_use_addin_names = gather_addin_names(not_in_use_dir)
+
+    if len(addin_names) == 0 and len(not_in_use_addin_names) == 0:
+        print("There are no addins installed.")
+    else:
+        if len(addin_names) > 0:
+            print("Installed addins:")
+
+            for addin_name in addin_names:
+                print("- " + addin_name)
+
+            print("")
+
+        if len(not_in_use_addin_names) > 0:
+            print("Addins not in use:")
+
+            for addin_name in not_in_use_addin_names:
+                print("- " + addin_name)
+
+            print("")
+
+def gather_addin_names(addins_dir):
+    addin_names = []
+
+    if os.path.isdir(addins_dir):
+        addins_dir_contents = os.listdir(addins_dir)
+
+        for addin_folder in addins_dir_contents:
+            addin_name = ""
+
+            addin_xml_path = os.path.join(addins_dir, addin_folder + "/addin.xml")
+            if os.path.isfile(addin_xml_path):
+                addin_info = open(addin_xml_path, "r", errors="ignore")
+                addin_parser = BeautifulSoup(addin_info, "xml")
+            
+                addin_name_record = addin_parser.find("name")
+                if addin_name_record is not None:
+                    addin_name = addin_name_record.contents[0]
+
+                addin_info.close()
+
+            if addin_name == "": #Fallback to id if couldn't read name
+                addin_name = addin_folder
+
+            addin_names.append(addin_name)
+
+    return addin_names
 
 def add_addin(filename):
     addins_dir = os.path.join(os.getcwd(), "addins")
