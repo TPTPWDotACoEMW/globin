@@ -204,6 +204,7 @@ for a beginner's guide, which will explain far better than this section will be 
     an error, refer to section 5.
 
     Globin supports several command-line arguments:
+    - "python3 globin.py list <names|paths|all>" displays the list of installed addins;
     - "python3 globin.py add <filename>" adds a new addin to the "addins" folder;
     - "python3 globin.py run" is the default behavior, described above; 
     - "python3 globin.py build" installs all addins without launching World Of Goo;
