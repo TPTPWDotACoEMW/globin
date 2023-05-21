@@ -1,6 +1,10 @@
-Latest version: v0.9.1
+Latest version: v0.9.4
 
 Version history:
+
+v0.9.4
+- Added a new command: list
+- Changed default behavior from "run" to "help"
 
 v0.9.3
 - Added a new command: add
