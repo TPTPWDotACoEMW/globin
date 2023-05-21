@@ -198,7 +198,7 @@ for a beginner's guide, which will explain far better than this section will be 
 
     The easiest way to run Globin is to use your computer's built-in command line terminal. To run
     Globin from the command line, navigate to the Globin directory and enter the command
-    "python3 globin.py". This will automatically run Globin, installing all addins in the "addins"
+    "python3 globin.py run". This will automatically run Globin, installing all addins in the "addins"
     folder and placing a button in Chapter 1 for each installed level (except levels in full
     chapters). After that, Globin automatically launches World of Goo. If running Globin gives 
     an error, refer to section 5.
@@ -206,9 +206,9 @@ for a beginner's guide, which will explain far better than this section will be 
     Globin supports several command-line arguments:
     - "python3 globin.py list <names|paths|all>" displays the list of installed addins;
     - "python3 globin.py add <filename>" adds a new addin to the "addins" folder;
-    - "python3 globin.py run" is the default behavior, described above; 
+    - "python3 globin.py run" installs all addins and launches World of Goo; 
     - "python3 globin.py build" installs all addins without launching World Of Goo;
-    - "python3 globin.py help" displays the info message.
+    - "python3 globin.py help" displays the info message. This is also the default behavior.
 
     Repeatedly using Globin will cause files with text appended to them (generally files in one or
     more "merge" folders) to build up with lots of text referencing the same object or objects.
