@@ -13,7 +13,7 @@ def main() :
     user_action_choices = ["build", "run", "add", "list", "help"]
 
     if len(sys.argv) <= 1:
-        user_action = "run"
+        user_action = "help"
     else:
         user_action = sys.argv[1]
 
