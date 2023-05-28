@@ -17,7 +17,6 @@
 ### Table of Contents
 - 1: What You Need To Know First
   -- 1.1: Current Constraints of Globin
-  -- 1.2: Extra Notes for GitHub
 - 2: Setting Up Globin
   -- 2.1: Setting Your World of Goo Directory
      --- 2.1.1: (Optional) Setting Your Steam Directory
@@ -94,11 +93,6 @@ modifying these folders' contents.
     that custom cutscenes will be skipped, and overriden cutscenes will crash the game. This is
     prevented by preserving the resources file of each vanilla cutscene. These cutscenes can still
     be modified by directly modifying the resources directly, however.
-    
-    ## 1.2: Extra Notes for GitHub
-    
-    GitHub does not support adding empty directories. This means the "addins" and "not-in-use" folder
-    have to be added manually. This may also apply to a few other folders in the repository.
 
 ~~~
 
