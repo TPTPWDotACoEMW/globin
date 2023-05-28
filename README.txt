@@ -17,7 +17,6 @@
 ### Table of Contents
 - 1: What You Need To Know First
   -- 1.1: Current Constraints of Globin
-  -- 1.2: Extra Notes for GitHub
 - 2: Setting Up Globin
   -- 2.1: Setting Your World of Goo Directory
      --- 2.1.1: (Optional) Setting Your Steam Directory
@@ -94,11 +93,6 @@ modifying these folders' contents.
     that custom cutscenes will be skipped, and overriden cutscenes will crash the game. This is
     prevented by preserving the resources file of each vanilla cutscene. These cutscenes can still
     be modified by directly modifying the resources directly, however.
-    
-    ## 1.2: Extra Notes for GitHub
-    
-    GitHub does not support adding empty directories. This means the "addins" and "not-in-use" folder
-    have to be added manually. This may also apply to a few other folders in the repository.
 
 ~~~
 
@@ -170,6 +164,20 @@ for a beginner's guide, which will explain far better than this section will be 
     you can move that addin to the "not-in-use" folder. This folder is not read by Globin, it is simply
     there for ease of moving addins to and from the "addins" folder.
 
+    You can use "enable" and "disable" command line arguments to move the addin between "addins" and 
+    "not-in-use" folders.
+
+    For example, suppose the addin is stored in "globin/addins/my.addin" folder. To mark it as not-in-use, 
+    execute the following command:
+    - python3 globin.py disable my.addin
+
+    Likewise, suppose the not-in-use addin is stored in "globin/not-in-use/my.addin" folder. To mark it
+    as in-use, execute the following command:
+    - python3 globin.py enable my.addin
+
+    To check the folder names of the addins, execute "list all" command:
+    - python3 globin.py list all
+
     ## 2.4: Dependencies
 
     Globin is a program that runs on Python3. As such, your system needs Python3 installed to run Globin.
@@ -206,9 +214,14 @@ for a beginner's guide, which will explain far better than this section will be 
     Globin supports several command-line arguments:
     - "python3 globin.py list <names|paths|all>" displays the list of installed addins;
     - "python3 globin.py add <filename>" adds a new addin to the "addins" folder;
+    - "python3 globin.py enable <addin folder>" marks the addin as in-use;
+    - "python3 globin.py disable <addin folder>" marks the addin as not-in-use;
     - "python3 globin.py run" installs all addins and launches World of Goo; 
     - "python3 globin.py build" installs all addins without launching World Of Goo;
     - "python3 globin.py help" displays the info message. This is also the default behavior.
+
+    The options "enable" and "disable" require typing the name of the folder which stores the addin.
+    You can check folder names with "list paths" or "list all" options.
 
     Repeatedly using Globin will cause files with text appended to them (generally files in one or
     more "merge" folders) to build up with lots of text referencing the same object or objects.

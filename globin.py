@@ -7,10 +7,11 @@ import shutil
 import sys
 import subprocess
 import zipfile
+import shutil
 
 def main() :
     user_action         = ""
-    user_action_choices = ["build", "run", "add", "list", "help"]
+    user_action_choices = ["build", "run", "add", "enable", "disable", "list", "help"]
 
     if len(sys.argv) <= 1:
         user_action = "help"
@@ -35,6 +36,16 @@ def main() :
         else:
             add_addin(sys.argv[2])
 
+    if user_action == "enable" or user_action == "disable":
+        if len(sys.argv) <= 2:
+            print("Please provide the folder name of an installed addin!")
+
+        elif user_action == "enable":
+            move_addin(sys.argv[2], "not-in-use", "addins")
+
+        elif user_action == "disable":
+            move_addin(sys.argv[2], "addins", "not-in-use")
+
     if user_action == "list":
         addin_list_selected_option = "names"
         addin_list_option_choices = ["paths", "names", "all"]
@@ -55,6 +66,8 @@ def display_help():
     print("python globin.py run:                     Installs the addins and launches World Of Goo")
     print("python globin.py list <names|paths|all>:  Displays the list of installed addins")
     print("python globin.py add <filename>:          Adds the addin to the list of installed addins")
+    print("python globin.py enable <addin folder>:   Marks the addin as in-use")
+    print("python globin.py disable <addin folder>:  Marks the addin as not-in-use")
     print("python globin.py help:                    Displays this message")
 
 def display_addin_list(addin_list_selected_option):
@@ -128,6 +141,25 @@ def add_addin(filename):
 
     with zipfile.ZipFile(filename, 'r') as addin_archive:
         addin_archive.extractall(addin_dir)
+
+def move_addin(addin_name, dir_from, dir_to):
+    path_from = os.path.join(os.getcwd(), dir_from)
+    path_from = os.path.join(path_from, addin_name)
+
+    path_to = os.path.join(os.getcwd(), dir_to)
+    if not(os.path.isdir(path_to)):
+        os.mkdir(path_to)
+        
+    path_to = os.path.join(dir_to, addin_name)
+
+    if os.path.exists(path_to):
+        return #Enabling an enabled addin or disabling a disabled addin is not considered an error
+    
+    if not os.path.exists(path_from):
+        print("Please provide the folder name of an installed addin!")
+        return
+
+    shutil.move(path_from, path_to)
 
 def build_addins(wog_dir):
     print("Starting...")
