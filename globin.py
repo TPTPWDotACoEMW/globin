@@ -214,11 +214,11 @@ def build_addins(wog_dir):
             
 
             text_path = os.path.join(game_folder, "properties/text.xml")
-            text_file = open(text_path, "r+")
+            text_file = open(text_path, "r+", errors="ignore")
             text_soup = BeautifulSoup(text_file, "xml")
 
             island_path = os.path.join(game_folder, "res/islands/island1.xml")
-            island_file = open(island_path, "r+")
+            island_file = open(island_path, "r+", errors="ignore")
             island_soup = BeautifulSoup(island_file, "xml")
 
             # Step 1: Parse out all the levels
@@ -275,7 +275,7 @@ def build_addins(wog_dir):
         print("Placing level buttons...")
 
         buttons_path = os.path.join(game_folder, "res/levels/island1/island1.scene")
-        buttons_file = open(buttons_path, "r+")
+        buttons_file = open(buttons_path, "r+", errors="ignore")
         buttons_soup = BeautifulSoup(buttons_file, "xml")
         buttons_soup.scene['maxy'] = max(float((1200 + (120 * floor(len(level_id_list) / 10)))), float(buttons_soup.scene.get("maxy")))
         buttons_soup.scene['backgroundcolor'] = "138,145,232"
@@ -366,7 +366,7 @@ def launch_world_of_goo_macos(wog_dir):
         subprocess.Popen(game_executable)
 
 def read_directory_from_file(filename):
-    read_directory = open(filename, "r")
+    read_directory = open(filename, "r", errors="ignore")
     directory = read_directory.readline().strip()
     read_directory.close()
 
@@ -403,13 +403,13 @@ def xsl_copy(merge_dir, current_path, target_file, game_folder) :
     elif os.path.isfile(full_path) :
         if full_path.endswith(".xsl") :
             parser = etree.XMLParser()
-            xsl = open(full_path, "r")
+            xsl = open(full_path, "r", errors="ignore")
             xsl_root = etree.parse(xsl, parser)
 
 
             target_in_game_files = target_file.replace(".xsl","")
             target_game_directory = os.path.join(os.path.join(game_folder, current_path), target_in_game_files)
-            xml = open(target_game_directory, "r+")
+            xml = open(target_game_directory, "r+", errors="ignore")
             xml_target = etree.parse(xml, parser)
 
             transform = etree.XSLT(xsl_root)
