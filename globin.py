@@ -58,7 +58,7 @@ def main() :
         display_help()
 
 def display_help():
-    print("--- Globin ver. 0.9 ---")
+    print("--- Globin ver. 0.9.5 ---")
     print("A tool for installing mods for World of Goo 1.5\n")
 
     print("Usage:")
