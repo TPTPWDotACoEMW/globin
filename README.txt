@@ -92,7 +92,7 @@ modifying these folders' contents.
     The cutscenes in the latest version of World of Goo use a different type of binary. This means
     that custom cutscenes will be skipped, and overriden cutscenes will crash the game. This is
     prevented by preserving the resources file of each vanilla cutscene. These cutscenes can still
-    be modified by directly modifying the resources directly, however.
+    be modified by modifying the resources directly, however.
 
 ~~~
 
