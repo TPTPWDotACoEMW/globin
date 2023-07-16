@@ -8,6 +8,10 @@ import sys
 import subprocess
 import zipfile
 import shutil
+import errno
+from collections import namedtuple
+
+AddinInfo = namedtuple("AddinInfo", ["name", "author", "type", "version", "description", "folder_name"])
 
 def main() :
     user_action         = ""
@@ -74,61 +78,84 @@ def display_addin_list(addin_list_selected_option):
     addins_dir     = os.path.join(os.getcwd(), "addins")
     not_in_use_dir = os.path.join(os.getcwd(), "not-in-use") 
     
-    addin_names            = gather_addin_names(addins_dir)
-    not_in_use_addin_names = gather_addin_names(not_in_use_dir)
+    addin_infos            = gather_addin_infos(addins_dir)
+    not_in_use_addin_infos = gather_addin_infos(not_in_use_dir)
 
-    if len(addin_names) == 0 and len(not_in_use_addin_names) == 0:
+    if len(addin_infos) == 0 and len(not_in_use_addin_infos) == 0:
         print("There are no addins installed.")
     else:
-        if len(addin_names) > 0:
+        if len(addin_infos) > 0:
             print("Installed addins:")
 
-            for addin_folder, addin_name in addin_names:
+            for addin_info in addin_infos:
                 if addin_list_selected_option == "paths":
-                    print("- " + addin_folder)
+                    print("- " + addin_info.folder_name)
                 elif addin_list_selected_option == "names":
-                    print("- " + addin_name)
+                    print("- " + addin_info.name)
                 elif addin_list_selected_option == "all":
-                    print("- [" + addin_folder + "] " + addin_name)
+                    print("- [" + addin_info.folder_name + "] " + addin_info.name)
 
             print("")
 
-        if len(not_in_use_addin_names) > 0:
+        if len(not_in_use_addin_infos) > 0:
             print("Addins not in use:")
 
-            for addin_folder, addin_name in not_in_use_addin_names:
+            for addin_info in not_in_use_addin_infos:
                 if addin_list_selected_option == "paths":
-                    print("- " + addin_folder)
+                    print("- " + addin_info.folder_name)
                 elif addin_list_selected_option == "names":
-                    print("- " + addin_name)
+                    print("- " + addin_info.name)
                 elif addin_list_selected_option == "all":
-                    print("- [" + addin_folder + "] " + addin_name)
+                    print("- [" + addin_info.folder_name + "] " + addin_info.name)
 
             print("")
 
-def gather_addin_names(addins_dir):
-    addin_names = []
+def gather_addin_infos(addins_dir):
+    addin_infos = []
 
     if os.path.isdir(addins_dir):
         addins_dir_contents = os.listdir(addins_dir)
 
         for addin_folder in addins_dir_contents:
-            addin_name = ""
+            addin_infos.append(read_addin_info(addin_folder, addins_dir))
 
-            addin_xml_path = os.path.join(addins_dir, addin_folder + "/addin.xml")
-            if os.path.isfile(addin_xml_path):
-                addin_info = open(addin_xml_path, "r", errors="ignore")
-                addin_parser = BeautifulSoup(addin_info, "xml")
-            
-                addin_name_record = addin_parser.find("name")
-                if addin_name_record is not None:
-                    addin_name = addin_name_record.contents[0]
+    return addin_infos
 
-                addin_info.close()
+def read_addin_info(addin_folder, addin_parent_dir):
+    addin_name        = ""
+    addin_author      = ""
+    addin_type        = ""
+    addin_version     = ""
+    addin_description = ""
 
-            addin_names.append((addin_folder, addin_name))
+    addin_xml_path = os.path.join(addin_parent_dir, addin_folder + "/addin.xml")
+    if os.path.isfile(addin_xml_path):
+        addin_info = open(addin_xml_path, "r", errors="ignore")
+        addin_parser = BeautifulSoup(addin_info, "xml")
 
-    return addin_names
+        addin_name_record = addin_parser.find("name")
+        if addin_name_record is not None:
+            addin_name = addin_name_record.contents[0]
+
+        addin_author_record = addin_parser.find("author")
+        if addin_author_record is not None:
+            addin_author = addin_author_record.contents[0]
+
+        addin_type_record = addin_parser.find("type")
+        if addin_type_record is not None:
+            addin_type = addin_type_record.contents[0]
+
+        addin_version_record = addin_parser.find("version")
+        if addin_version_record is not None:
+            addin_version = addin_version_record.contents[0]
+
+        addin_description_record = addin_parser.find("description")
+        if addin_description_record is not None:
+            addin_description = addin_description_record.contents[0]
+
+        addin_info.close()
+
+    return AddinInfo(name=addin_name, author=addin_author, type=addin_type, version=addin_version, description=addin_description, folder_name=addin_folder)
 
 def add_addin(filename):
     addins_dir = os.path.join(os.getcwd(), "addins")
