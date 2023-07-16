@@ -161,11 +161,17 @@ def read_addin_info(addin_folder, addin_parent_dir):
 
 def add_addin(filename):
     addins_dir = os.path.join(os.getcwd(), "addins")
+    not_in_use_dir = os.path.join(os.getcwd(), "not-in-use")
     if not os.path.isdir(addins_dir):
         os.mkdir(addins_dir)
 
     addin_name = os.path.splitext(os.path.basename(filename))[0]
     addin_dir = os.path.join(addins_dir, addin_name)
+    not_in_use_addin_dir = os.path.join(not_in_use_dir, addin_name)
+
+    if os.path.isdir(addin_dir) or os.path.isdir(not_in_use_addin_dir):
+        raise FileExistsError("Addin already exists!")
+
     os.mkdir(addin_dir)
 
     try:
