@@ -38,7 +38,9 @@ def main() :
         if len(sys.argv) <= 2 or not os.path.isfile(sys.argv[2]) or not sys.argv[2].endswith(".goomod"):
             print("Please provide a valid addin file!")
         else:
-            add_addin(sys.argv[2])
+            new_addin = add_addin(sys.argv[2])
+            if new_addin is None:
+                print("Please provide a valid addin file!")
 
     if user_action == "enable" or user_action == "disable":
         if len(sys.argv) <= 2:
@@ -166,8 +168,15 @@ def add_addin(filename):
     addin_dir = os.path.join(addins_dir, addin_name)
     os.mkdir(addin_dir)
 
-    with zipfile.ZipFile(filename, 'r') as addin_archive:
-        addin_archive.extractall(addin_dir)
+    try:
+        with zipfile.ZipFile(filename, 'r') as addin_archive:
+            addin_archive.extractall(addin_dir)
+
+    except zipfile.BadZipFile:
+        os.rmdir(addin_dir)
+        return None
+
+    return read_addin_info(addin_dir, addins_dir)
 
 def move_addin(addin_name, dir_from, dir_to):
     path_from = os.path.join(os.getcwd(), dir_from)
