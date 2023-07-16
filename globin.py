@@ -487,4 +487,5 @@ def xsl_copy(merge_dir, current_path, target_file, game_folder) :
         else :
             print(f"WARNING: File \"{target_file}\" was found in \"merge\" folder but is not a .xsl file. Globin does not merge non-xsl files - this addin may not have been installed properly.")
 
-main()
+if __name__ == "__main__":
+    main()
