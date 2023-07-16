@@ -31,8 +31,25 @@ def main() :
         wog_dir = read_directory_from_file("wog_directory.txt")
         print(f"World of Goo directory set to {wog_dir}.")
 
-        if build_addins(wog_dir) and user_action == "run":
-            launch_world_of_goo(wog_dir)
+        try:
+            if build_addins(wog_dir) and user_action == "run":
+                launch_world_of_goo(wog_dir)
+        
+        except FileNotFoundError as e:
+            if e.filename == "wog_dir":
+                print("ERROR: Files were not verified successfully. You may be using an old version of World of Goo,")
+                print("or a demo version. Globin will not work with these versions. If you are using the latest version,")
+                print("make sure you've specified the directory correctly.\n\nGlobin will now exit.")    
+
+            elif e.filename == "steam_dir":
+                if platform.system() == "Windows":
+                    print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+                    print("but the Steam directory you have specified is not correct.")
+                    print("Please provide the correct directory in steam_directory.txt.")
+                
+                else:
+                    print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+                    print("but there was a problem launching Steam.")
 
     if user_action == "add":
         if len(sys.argv) <= 2 or not os.path.isfile(sys.argv[2]) or not sys.argv[2].endswith(".goomod"):
@@ -203,11 +220,18 @@ def move_addin(addin_name, dir_from, dir_to):
 
     shutil.move(path_from, path_to)
 
+def is_valid_game_directory(wog_dir):
+    verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
+    return os.path.isfile(verifier)
+
 def build_addins(wog_dir):
     print("Starting...")
     print("Verifying game files...")
-    verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
-    if os.path.isfile(verifier) :
+
+    if not is_valid_game_directory(wog_dir):
+        raise FileNotFoundError(errno.ENOENT, "World of Goo directory not found, or contains an unsupported version of World of Goo", "wog_dir")
+
+    else:
         print("Game files verified. Beginning installation...")
         addins_dir = os.path.join(os.getcwd(), "addins")
         game_folder = os.path.join(os.fspath(wog_dir), "game")
@@ -341,13 +365,18 @@ def build_addins(wog_dir):
         print("All addins installed. Thank you for using Globin.\n")
 
         return True
-    
-    else :
-        print("ERROR: Files were not verified successfully. You may be using an old version of World of Goo,")
-        print("or a demo version. Globin will not work with these versions. If you are using the latest version,")
-        print("make sure you've specified the directory correctly.\n\nGlobin will now exit.")
 
-        return False
+def is_valid_steam_directory(steam_dir):
+    steam_executable = ""
+    
+    if platform.system() == "Windows":
+        steam_executable = os.path.join(steam_dir, "Steam.exe")
+    elif platform.system() == "Linux":
+        steam_executable = os.path.join(steam_dir, "steam")
+    elif platform.system() == "Darwin":
+        steam_executable = os.path.join(steam_dir, "steam_osx")
+
+    return os.path.isfile(steam_executable)
 
 def launch_world_of_goo(wog_dir):
     if platform.system() == "Windows":
@@ -366,13 +395,10 @@ def launch_world_of_goo_windows(wog_dir):
         steam_path = read_directory_from_file("steam_directory.txt")
         steam_executable = os.path.join(steam_path, "Steam.exe")
 
-        if os.path.isfile(steam_executable):
-            subprocess.Popen([steam_executable, "-applaunch", "22000"])
-
-        else:
-            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
-            print("but the Steam directory you have specified is not correct.")
-            print("Please provide the correct directory in steam_directory.txt.")
+        if not os.path.isfile(steam_executable):
+            raise FileNotFoundError(errno.ENOENT, "Steam directory not found", "steam_dir")
+        
+        subprocess.Popen([steam_executable, "-applaunch", "22000"])
             
     else:
         #Apparently Epic Games version can also be launched directly from game .exe, starting the launcher if needed
@@ -395,13 +421,11 @@ def launch_world_of_goo_macos(wog_dir):
 
     if is_steam_version:
         steam_executable = "/Applications/Steam.app/Contents/MacOS/steam_osx" #Apparently apps on Mac are always installed in /Applications?
-
-        if os.path.isfile(steam_executable):
-            subprocess.Popen([steam_executable, "-applaunch", "22000"])
-
-        else:
-            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
-            print("but there was a problem launching Steam.")
+        
+        if not os.path.isfile(steam_executable):
+            raise FileNotFoundError(errno.ENOENT, "Steam directory not found", "steam_dir")
+        
+        subprocess.Popen([steam_executable, "-applaunch", "22000"])
             
     else:
         game_executable = os.path.join(os.fspath(wog_dir), "../MacOS/World of Goo")
