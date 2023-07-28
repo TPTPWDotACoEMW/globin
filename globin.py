@@ -8,6 +8,10 @@ import sys
 import subprocess
 import zipfile
 import shutil
+import errno
+from collections import namedtuple
+
+AddinInfo = namedtuple("AddinInfo", ["name", "author", "type", "version", "description", "folder_name"])
 
 def main() :
     user_action         = ""
@@ -27,14 +31,33 @@ def main() :
         wog_dir = read_directory_from_file("wog_directory.txt")
         print(f"World of Goo directory set to {wog_dir}.")
 
-        if build_addins(wog_dir) and user_action == "run":
-            launch_world_of_goo(wog_dir)
+        try:
+            if build_addins(wog_dir) and user_action == "run":
+                launch_world_of_goo(wog_dir)
+        
+        except FileNotFoundError as e:
+            if e.filename == "wog_dir":
+                print("ERROR: Files were not verified successfully. You may be using an old version of World of Goo,")
+                print("or a demo version. Globin will not work with these versions. If you are using the latest version,")
+                print("make sure you've specified the directory correctly.\n\nGlobin will now exit.")    
+
+            elif e.filename == "steam_dir":
+                if platform.system() == "Windows":
+                    print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+                    print("but the Steam directory you have specified is not correct.")
+                    print("Please provide the correct directory in steam_directory.txt.")
+                
+                else:
+                    print("LAUNCH ERROR. It seems you are using Steam version of the game,")
+                    print("but there was a problem launching Steam.")
 
     if user_action == "add":
         if len(sys.argv) <= 2 or not os.path.isfile(sys.argv[2]) or not sys.argv[2].endswith(".goomod"):
             print("Please provide a valid addin file!")
         else:
-            add_addin(sys.argv[2])
+            new_addin = add_addin(sys.argv[2])
+            if new_addin is None:
+                print("Please provide a valid addin file!")
 
     if user_action == "enable" or user_action == "disable":
         if len(sys.argv) <= 2:
@@ -74,73 +97,109 @@ def display_addin_list(addin_list_selected_option):
     addins_dir     = os.path.join(os.getcwd(), "addins")
     not_in_use_dir = os.path.join(os.getcwd(), "not-in-use") 
     
-    addin_names            = gather_addin_names(addins_dir)
-    not_in_use_addin_names = gather_addin_names(not_in_use_dir)
+    addin_infos            = gather_addin_infos(addins_dir)
+    not_in_use_addin_infos = gather_addin_infos(not_in_use_dir)
 
-    if len(addin_names) == 0 and len(not_in_use_addin_names) == 0:
+    if len(addin_infos) == 0 and len(not_in_use_addin_infos) == 0:
         print("There are no addins installed.")
     else:
-        if len(addin_names) > 0:
+        if len(addin_infos) > 0:
             print("Installed addins:")
 
-            for addin_folder, addin_name in addin_names:
+            for addin_info in addin_infos:
                 if addin_list_selected_option == "paths":
-                    print("- " + addin_folder)
+                    print("- " + addin_info.folder_name)
                 elif addin_list_selected_option == "names":
-                    print("- " + addin_name)
+                    print("- " + addin_info.name)
                 elif addin_list_selected_option == "all":
-                    print("- [" + addin_folder + "] " + addin_name)
+                    print("- [" + addin_info.folder_name + "] " + addin_info.name)
 
             print("")
 
-        if len(not_in_use_addin_names) > 0:
+        if len(not_in_use_addin_infos) > 0:
             print("Addins not in use:")
 
-            for addin_folder, addin_name in not_in_use_addin_names:
+            for addin_info in not_in_use_addin_infos:
                 if addin_list_selected_option == "paths":
-                    print("- " + addin_folder)
+                    print("- " + addin_info.folder_name)
                 elif addin_list_selected_option == "names":
-                    print("- " + addin_name)
+                    print("- " + addin_info.name)
                 elif addin_list_selected_option == "all":
-                    print("- [" + addin_folder + "] " + addin_name)
+                    print("- [" + addin_info.folder_name + "] " + addin_info.name)
 
             print("")
 
-def gather_addin_names(addins_dir):
-    addin_names = []
+def gather_addin_infos(addins_dir):
+    addin_infos = []
 
     if os.path.isdir(addins_dir):
         addins_dir_contents = os.listdir(addins_dir)
 
         for addin_folder in addins_dir_contents:
-            addin_name = ""
+            addin_infos.append(read_addin_info(addin_folder, addins_dir))
 
-            addin_xml_path = os.path.join(addins_dir, addin_folder + "/addin.xml")
-            if os.path.isfile(addin_xml_path):
-                addin_info = open(addin_xml_path, "r", errors="ignore")
-                addin_parser = BeautifulSoup(addin_info, "xml")
-            
-                addin_name_record = addin_parser.find("name")
-                if addin_name_record is not None:
-                    addin_name = addin_name_record.contents[0]
+    return addin_infos
 
-                addin_info.close()
+def read_addin_info(addin_folder, addin_parent_dir):
+    addin_name        = ""
+    addin_author      = ""
+    addin_type        = ""
+    addin_version     = ""
+    addin_description = ""
 
-            addin_names.append((addin_folder, addin_name))
+    addin_xml_path = os.path.join(addin_parent_dir, addin_folder + "/addin.xml")
+    if os.path.isfile(addin_xml_path):
+        addin_info = open(addin_xml_path, "r", errors="ignore")
+        addin_parser = BeautifulSoup(addin_info, "xml")
 
-    return addin_names
+        addin_name_record = addin_parser.find("name")
+        if addin_name_record is not None:
+            addin_name = addin_name_record.contents[0]
+
+        addin_author_record = addin_parser.find("author")
+        if addin_author_record is not None:
+            addin_author = addin_author_record.contents[0]
+
+        addin_type_record = addin_parser.find("type")
+        if addin_type_record is not None:
+            addin_type = addin_type_record.contents[0]
+
+        addin_version_record = addin_parser.find("version")
+        if addin_version_record is not None:
+            addin_version = addin_version_record.contents[0]
+
+        addin_description_record = addin_parser.find("description")
+        if addin_description_record is not None:
+            addin_description = addin_description_record.contents[0]
+
+        addin_info.close()
+
+    return AddinInfo(name=addin_name, author=addin_author, type=addin_type, version=addin_version, description=addin_description, folder_name=addin_folder)
 
 def add_addin(filename):
     addins_dir = os.path.join(os.getcwd(), "addins")
+    not_in_use_dir = os.path.join(os.getcwd(), "not-in-use")
     if not os.path.isdir(addins_dir):
         os.mkdir(addins_dir)
 
     addin_name = os.path.splitext(os.path.basename(filename))[0]
     addin_dir = os.path.join(addins_dir, addin_name)
+    not_in_use_addin_dir = os.path.join(not_in_use_dir, addin_name)
+
+    if os.path.isdir(addin_dir) or os.path.isdir(not_in_use_addin_dir):
+        raise FileExistsError("Addin already exists!")
+
     os.mkdir(addin_dir)
 
-    with zipfile.ZipFile(filename, 'r') as addin_archive:
-        addin_archive.extractall(addin_dir)
+    try:
+        with zipfile.ZipFile(filename, 'r') as addin_archive:
+            addin_archive.extractall(addin_dir)
+
+    except zipfile.BadZipFile:
+        os.rmdir(addin_dir)
+        return None
+
+    return read_addin_info(addin_dir, addins_dir)
 
 def move_addin(addin_name, dir_from, dir_to):
     path_from = os.path.join(os.getcwd(), dir_from)
@@ -161,11 +220,18 @@ def move_addin(addin_name, dir_from, dir_to):
 
     shutil.move(path_from, path_to)
 
+def is_valid_game_directory(wog_dir):
+    verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
+    return os.path.isfile(verifier)
+
 def build_addins(wog_dir):
     print("Starting...")
     print("Verifying game files...")
-    verifier = os.path.join(wog_dir, "game/res/levels/island3/pipecon_03@2x.png")
-    if os.path.isfile(verifier) :
+
+    if not is_valid_game_directory(wog_dir):
+        raise FileNotFoundError(errno.ENOENT, "World of Goo directory not found, or contains an unsupported version of World of Goo", "wog_dir")
+
+    else:
         print("Game files verified. Beginning installation...")
         addins_dir = os.path.join(os.getcwd(), "addins")
         game_folder = os.path.join(os.fspath(wog_dir), "game")
@@ -299,13 +365,18 @@ def build_addins(wog_dir):
         print("All addins installed. Thank you for using Globin.\n")
 
         return True
-    
-    else :
-        print("ERROR: Files were not verified successfully. You may be using an old version of World of Goo,")
-        print("or a demo version. Globin will not work with these versions. If you are using the latest version,")
-        print("make sure you've specified the directory correctly.\n\nGlobin will now exit.")
 
-        return False
+def is_valid_steam_directory(steam_dir):
+    steam_executable = ""
+    
+    if platform.system() == "Windows":
+        steam_executable = os.path.join(steam_dir, "Steam.exe")
+    elif platform.system() == "Linux":
+        steam_executable = os.path.join(steam_dir, "steam")
+    elif platform.system() == "Darwin":
+        steam_executable = os.path.join(steam_dir, "steam_osx")
+
+    return os.path.isfile(steam_executable)
 
 def launch_world_of_goo(wog_dir):
     if platform.system() == "Windows":
@@ -324,13 +395,10 @@ def launch_world_of_goo_windows(wog_dir):
         steam_path = read_directory_from_file("steam_directory.txt")
         steam_executable = os.path.join(steam_path, "Steam.exe")
 
-        if os.path.isfile(steam_executable):
-            subprocess.Popen([steam_executable, "-applaunch", "22000"])
-
-        else:
-            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
-            print("but the Steam directory you have specified is not correct.")
-            print("Please provide the correct directory in steam_directory.txt.")
+        if not os.path.isfile(steam_executable):
+            raise FileNotFoundError(errno.ENOENT, "Steam directory not found", "steam_dir")
+        
+        subprocess.Popen([steam_executable, "-applaunch", "22000"])
             
     else:
         #Apparently Epic Games version can also be launched directly from game .exe, starting the launcher if needed
@@ -353,13 +421,11 @@ def launch_world_of_goo_macos(wog_dir):
 
     if is_steam_version:
         steam_executable = "/Applications/Steam.app/Contents/MacOS/steam_osx" #Apparently apps on Mac are always installed in /Applications?
-
-        if os.path.isfile(steam_executable):
-            subprocess.Popen([steam_executable, "-applaunch", "22000"])
-
-        else:
-            print("LAUNCH ERROR. It seems you are using Steam version of the game,")
-            print("but there was a problem launching Steam.")
+        
+        if not os.path.isfile(steam_executable):
+            raise FileNotFoundError(errno.ENOENT, "Steam directory not found", "steam_dir")
+        
+        subprocess.Popen([steam_executable, "-applaunch", "22000"])
             
     else:
         game_executable = os.path.join(os.fspath(wog_dir), "../MacOS/World of Goo")
@@ -421,4 +487,5 @@ def xsl_copy(merge_dir, current_path, target_file, game_folder) :
         else :
             print(f"WARNING: File \"{target_file}\" was found in \"merge\" folder but is not a .xsl file. Globin does not merge non-xsl files - this addin may not have been installed properly.")
 
-main()
+if __name__ == "__main__":
+    main()
