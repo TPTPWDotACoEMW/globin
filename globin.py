@@ -149,7 +149,7 @@ def read_addin_info(addin_folder, addin_parent_dir):
 
     addin_xml_path = os.path.join(addin_parent_dir, addin_folder + "/addin.xml")
     if os.path.isfile(addin_xml_path):
-        addin_info = open(addin_xml_path, "r", errors="ignore")
+        addin_info = open(addin_xml_path, "r", encoding="utf-8")
         addin_parser = BeautifulSoup(addin_info, "xml")
 
         addin_name_record = addin_parser.find("name")
@@ -268,23 +268,23 @@ def build_addins(wog_dir):
             
             print("Parsing level information...")
             addin_info_path = os.path.join(addin_path, "addin.xml")
-            addin_info = open(addin_info_path, "r", errors="ignore")
+            addin_info = open(addin_info_path, "r", encoding="utf-8")
             addin_parser = BeautifulSoup(addin_info, "xml")
             text_info_path = os.path.join(addin_path, "text.xml")
             if os.path.isfile(text_info_path) :
-                text_info = open(text_info_path, "r", errors="ignore")
+                text_info = open(text_info_path, "r", encoding="utf-8")
                 text_parser = BeautifulSoup(text_info, "xml")
             else :
-                text_info = open(text_info_path, "x", errors="ignore")
+                text_info = open(text_info_path, "x", encoding="utf-8")
                 text_parser = BeautifulSoup("", "xml")
             
 
             text_path = os.path.join(game_folder, "properties/text.xml")
-            text_file = open(text_path, "r+")
+            text_file = open(text_path, "r+", encoding="utf-8")
             text_soup = BeautifulSoup(text_file, "xml")
 
             island_path = os.path.join(game_folder, "res/islands/island1.xml")
-            island_file = open(island_path, "r+")
+            island_file = open(island_path, "r+", encoding="utf-8")
             island_soup = BeautifulSoup(island_file, "xml")
 
             # Step 1: Parse out all the levels
@@ -341,7 +341,7 @@ def build_addins(wog_dir):
         print("Placing level buttons...")
 
         buttons_path = os.path.join(game_folder, "res/levels/island1/island1.scene")
-        buttons_file = open(buttons_path, "r+")
+        buttons_file = open(buttons_path, "r+", encoding="utf-8")
         buttons_soup = BeautifulSoup(buttons_file, "xml")
         buttons_soup.scene['maxy'] = max(float((1200 + (120 * floor(len(level_id_list) / 10)))), float(buttons_soup.scene.get("maxy")))
         buttons_soup.scene['backgroundcolor'] = "138,145,232"
@@ -432,7 +432,7 @@ def launch_world_of_goo_macos(wog_dir):
         subprocess.Popen(game_executable)
 
 def read_directory_from_file(filename):
-    read_directory = open(filename, "r")
+    read_directory = open(filename, "r", encoding="utf-8")
     directory = read_directory.readline().strip()
     read_directory.close()
 
@@ -469,13 +469,13 @@ def xsl_copy(merge_dir, current_path, target_file, game_folder) :
     elif os.path.isfile(full_path) :
         if full_path.endswith(".xsl") :
             parser = etree.XMLParser()
-            xsl = open(full_path, "r")
+            xsl = open(full_path, "r", encoding="utf-8")
             xsl_root = etree.parse(xsl, parser)
 
 
             target_in_game_files = target_file.replace(".xsl","")
             target_game_directory = os.path.join(os.path.join(game_folder, current_path), target_in_game_files)
-            xml = open(target_game_directory, "r+")
+            xml = open(target_game_directory, "r+", encoding="utf-8")
             xml_target = etree.parse(xml, parser)
 
             transform = etree.XSLT(xsl_root)
