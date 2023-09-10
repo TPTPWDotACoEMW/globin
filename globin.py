@@ -51,6 +51,9 @@ def main() :
                     print("LAUNCH ERROR. It seems you are using Steam version of the game,")
                     print("but there was a problem launching Steam.")
 
+            else:
+                print(e)
+
     if user_action == "add":
         if len(sys.argv) <= 2 or not os.path.isfile(sys.argv[2]) or not sys.argv[2].endswith(".goomod"):
             print("Please provide a valid addin file!")
@@ -238,6 +241,10 @@ def build_addins(wog_dir):
         print("Importing useful resources...\n")
         mergedir(os.getcwd(), "addin_rsc", game_folder)
         
+        #In case we want to launch World of Goo without addins
+        if not os.path.isdir(addins_dir):
+            os.mkdir(addins_dir)
+
         level_id_list = []
         for addin in os.listdir(addins_dir) :
             print(f"Copying {os.fsdecode(addin)}...")
