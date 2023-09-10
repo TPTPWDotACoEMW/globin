@@ -19,6 +19,9 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.tabWidget = QtWidgets.QTabWidget(parent=self.centralWidget)
         self.tabWidget.setObjectName("tabWidget")
+        self.tabProfileInfo = ProfileTab()
+        self.tabProfileInfo.setObjectName("tabProfileInfo")
+        self.tabWidget.addTab(self.tabProfileInfo, "")
         self.tabAddinsInfo = AddinsTab()
         self.tabAddinsInfo.setObjectName("tabAddinsInfo")
         self.tabWidget.addTab(self.tabAddinsInfo, "")
@@ -51,15 +54,17 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabProfileInfo), _translate("MainWindow", "Profile"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabAddinsInfo), _translate("MainWindow", "Addins"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabOptions), _translate("MainWindow", "Options"))
         self.buttonSave.setText(_translate("MainWindow", "Save"))
         self.buttonSaveAndLaunch.setText(_translate("MainWindow", "Save and launch World Of Goo!"))
 from src.ui_addins_tab import AddinsTab
 from src.ui_options_tab import OptionsTab
+from src.ui_profile_tab import ProfileTab

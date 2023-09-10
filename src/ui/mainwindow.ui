@@ -18,8 +18,13 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
+      <widget class="ProfileTab" name="tabProfileInfo">
+       <attribute name="title">
+        <string>Profile</string>
+       </attribute>
+      </widget>
       <widget class="AddinsTab" name="tabAddinsInfo">
        <attribute name="title">
         <string>Addins</string>
@@ -106,6 +111,12 @@
    <class>OptionsTab</class>
    <extends>QWidget</extends>
    <header>src.ui_options_tab</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProfileTab</class>
+   <extends>QWidget</extends>
+   <header>src.ui_profile_tab</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
