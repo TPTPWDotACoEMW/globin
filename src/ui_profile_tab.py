@@ -117,6 +117,10 @@ class ProfileTab(QWidget):
             self.ui.labelLevelsPlayedValue.setText(str(len(self.selected_profile.level_results)))
             self.ui.labelFlagsValue.setText(ProfileTab.format_flags(self.selected_profile.flags))
 
+            self.ui.labelHeightValue.setText("{:.3f} meters".format(self.selected_profile.tower.tower_height))
+            self.ui.labelBallsValue.setText(str(self.selected_profile.tower.used_node_balls + self.selected_profile.tower.used_strand_balls) + " of " + str(self.selected_profile.tower.total_balls))
+            self.ui.labelNodeBallsValue.setText(str(self.selected_profile.tower.used_node_balls))
+            self.ui.labelStrandBallsValue.setText(str(self.selected_profile.tower.used_strand_balls))
             self.level_results_model = LevelsTableModel(self.selected_profile)
             self.table_proxy_model = QSortFilterProxyModel()
 

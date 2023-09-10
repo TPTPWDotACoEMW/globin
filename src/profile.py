@@ -1,5 +1,6 @@
 import os
 import platform
+from .tower import Tower
 from dataclasses import dataclass
 
 def get_profile_filename():
@@ -71,8 +72,7 @@ class Profile:
 
                 self.skipped_level_ids.append(skipped_level_id)
 
-            #Skip tower for now
-            _tower_str = profile_tokens[token_index]
+            self.tower = Tower(profile_tokens[token_index])
             token_index += 1
 
             self.online_id = profile_tokens[token_index][1:]
