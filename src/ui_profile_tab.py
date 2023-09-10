@@ -4,6 +4,7 @@ from .ui.profile_tab import Ui_ProfileTab
 from PyQt6.QtWidgets import QWidget
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QAbstractTableModel, QSortFilterProxyModel, pyqtSignal
+from .ui_image_display_widget import ImageDisplayWidget
 from .profile import ProfileCollection
 from .tower_renderer import TowerRenderer
 from globin import read_directory_from_file, is_valid_game_directory
@@ -66,6 +67,7 @@ class LevelsTableModel(QAbstractTableModel):
 
 class ProfileTab(QWidget):
     configure_world_of_goo_directory_requested = pyqtSignal()
+    tower_image_label_clicked                  = pyqtSignal()
 
     def __init__(self):
         super(QWidget, self).__init__()
@@ -74,6 +76,11 @@ class ProfileTab(QWidget):
         self.ui.setupUi(self)
 
         self.level_results_model = None
+
+        self.ui.labelTower.setAttribute(Qt.WidgetAttribute.WA_Hover)
+        self.ui.labelTower.installEventFilter(self)
+
+        self.tower_image_label_clicked.connect(self.on_tower_image_clicked)
         self.ui.buttonConfigureWorldOfGooDirectory.clicked.connect(self.configure_world_of_goo_directory_requested)
 
         self.ui.comboBoxProfiles.activated.connect(self.on_profile_changed)
@@ -256,3 +263,22 @@ class ProfileTab(QWidget):
 
         self.ui.labelTower.setPixmap(QPixmap.fromImage(self.tower_image.scaled(new_width, new_height, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)))
 
+    def on_tower_image_clicked(self):
+        self.image_display_widget = ImageDisplayWidget(self.tower_image)
+        self.image_display_widget.show()        
+
+    def eventFilter(self, object, event):
+        if object == self.ui.labelTower:
+            if event.type() == QEvent.Type.HoverEnter:
+                self.setCursor(Qt.CursorShape.PointingHandCursor)
+                return True
+            
+            elif event.type() == QEvent.Type.HoverLeave:
+                self.setCursor(Qt.CursorShape.ArrowCursor)
+                return True
+            
+            elif event.type() == QEvent.Type.MouseButtonRelease:
+                self.tower_image_label_clicked.emit()
+                return True
+
+        return False
