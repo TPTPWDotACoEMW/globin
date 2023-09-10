@@ -5,6 +5,7 @@ from PyQt6.QtWidgets import QWidget
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QAbstractTableModel, QSortFilterProxyModel, pyqtSignal
 from .profile import ProfileCollection
+from .tower_renderer import TowerRenderer
 from globin import read_directory_from_file, is_valid_game_directory
 
 class LevelsTableModel(QAbstractTableModel):
@@ -73,7 +74,13 @@ class ProfileTab(QWidget):
         self.ui.setupUi(self)
 
         self.level_results_model = None
+        self.ui.buttonConfigureWorldOfGooDirectory.clicked.connect(self.configure_world_of_goo_directory_requested)
+
         self.ui.comboBoxProfiles.activated.connect(self.on_profile_changed)
+
+        self.tower_renderer = None
+        self.tower_image    = None
+        self.init_tower_renderer()
 
         self.selected_profile = None
         self.load_profiles()
@@ -99,10 +106,39 @@ class ProfileTab(QWidget):
         else:
             self.ui.comboBoxProfiles.hide()
             self.ui.stackedWidgetProfiles.setCurrentWidget(self.ui.pageNoProfileFound)
+            
+    def on_wog_dir_changed(self):
+        self.init_tower_renderer()
+        self.show_tower_image()
 
     def on_profile_changed(self):
         self.selected_profile = self.profile_collection.get_profile_by_index(self.ui.comboBoxProfiles.currentIndex())
         self.show_selected_profile()
+
+    def init_tower_renderer(self):
+        wog_dir = read_directory_from_file("wog_directory.txt")
+        
+        if is_valid_game_directory(wog_dir):
+            self.tower_renderer = TowerRenderer(wog_dir)
+            self.ui.stackedWidgetTower.setCurrentWidget(self.ui.pageTower)
+
+        else:
+            self.tower_renderer = None
+            self.ui.stackedWidgetTower.setCurrentWidget(self.ui.pageDirectoryNotConfigured)
+
+    def show_tower_image(self):
+        if self.selected_profile is not None and self.tower_renderer is not None:
+            self.ui.labelTower.show()
+
+            self.tower_image = self.tower_renderer.render_tower(self.selected_profile.tower)
+            
+            self.ui.labelTower.setMinimumWidth(min(self.tower_image.width(), self.ui.labelTower.maximumWidth()))
+            self.ui.labelTower.setMinimumHeight(min(self.tower_image.height(), self.ui.labelTower.maximumHeight()))
+
+            self.update_tower_thumbnail()
+
+        else:
+            self.ui.labelTower.hide()
 
     def show_selected_profile(self):
         if self.selected_profile is None:
@@ -121,6 +157,9 @@ class ProfileTab(QWidget):
             self.ui.labelBallsValue.setText(str(self.selected_profile.tower.used_node_balls + self.selected_profile.tower.used_strand_balls) + " of " + str(self.selected_profile.tower.total_balls))
             self.ui.labelNodeBallsValue.setText(str(self.selected_profile.tower.used_node_balls))
             self.ui.labelStrandBallsValue.setText(str(self.selected_profile.tower.used_strand_balls))
+
+            self.show_tower_image()
+
             self.level_results_model = LevelsTableModel(self.selected_profile)
             self.table_proxy_model = QSortFilterProxyModel()
 
@@ -210,3 +249,10 @@ class ProfileTab(QWidget):
             result += "Flag128.\n"
 
         return result
+
+    def update_tower_thumbnail(self):
+        new_width  = min(self.ui.labelTower.maximumWidth(),  self.tower_image.width())
+        new_height = min(self.ui.labelTower.maximumHeight(), self.tower_image.height())
+
+        self.ui.labelTower.setPixmap(QPixmap.fromImage(self.tower_image.scaled(new_width, new_height, Qt.AspectRatioMode.KeepAspectRatio, Qt.TransformationMode.SmoothTransformation)))
+
