@@ -1,9 +1,12 @@
 from .ui.options_tab import Ui_OptionsTab
 
 from PyQt6.QtWidgets import QWidget, QFileDialog, QMessageBox
+from PyQt6.QtCore import pyqtSignal
 from globin import read_directory_from_file, is_valid_steam_directory, is_valid_game_directory
 
 class OptionsTab(QWidget):
+    wog_dir_changed = pyqtSignal()
+
     def __init__(self):
         super(QWidget, self).__init__()
 
@@ -47,3 +50,5 @@ class OptionsTab(QWidget):
         with open("wog_directory.txt", "w") as wog_dir_file:
             wog_dir_file.write(new_wog_directory)
             wog_dir_file.close()
+
+        self.wog_dir_changed.emit()

@@ -20,6 +20,9 @@ class GlobinMainWindow(QMainWindow):
         self.configure_world_of_goo_directory_requested.connect(self.ui.tabOptions.browse_world_of_goo_directory)
         self.configure_steam_directory_requested.connect(self.ui.tabOptions.browse_steam_directory)
 
+        self.ui.tabProfileInfo.configure_world_of_goo_directory_requested.connect(self.configure_world_of_goo_directory_requested)
+        self.ui.tabOptions.wog_dir_changed.connect(self.ui.tabProfileInfo.on_wog_dir_changed)
+
     def on_save_clicked(self):
         self.build_and_launch(launch_after_build = False)
 
